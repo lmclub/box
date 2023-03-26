@@ -4,7 +4,7 @@
     "show_notice": false,
     "image_url": "https://s1.ax1x.com/2023/03/05/ppEUra6.png",
     "api_url": "http://api.lotics.com",
-    "remark": "近日来龙门遭受到恶意投诉、持续DDos攻击和cc攻击，导致域名被封禁，官网无法访问，接口配置经常连接失败。努力修复中，请大家下载龙门视频手机版以防丢失！！",
+    "remark": "通知：连日来龙门遭受到持续的攻击，导致出现空壳、加载缓慢、加载失败等现象。虽已努力但仍无法抵御持续攻击，至今尚未恢复！如有高防服务器的朋友，欢迎赞助，只需存几个静态文件就好！",
     "show_marquee": true,
     "marquee_content": "温馨提示：请勿相信视频中的任何广告，谨防上当！",
     "update": "Yes",
