@@ -8,7 +8,7 @@
     "show_marquee": true,
     "marquee_content": "温馨提示：请勿相信视频中的任何广告，谨防上当！",
     "update": "Yes",
-    "apk_file_url": "http://bt.hm.iqinu.com:32000/box/apk/lmbox.apk",
+    "apk_file_url": "https://ghproxy.com/https://raw.githubusercontent.com/lmclub/box/main/apk/lmvod.apk",
     "update_log": "可移动遥控器上下键点确定升级\n1、遥控板下键播放下一集；\n2、修复Alist网盘功能；\n3、修复安卓4嗅探闪退问题；\n4、调整首页界面和配置；\n5、优化如果首页历史删除功能；\n6、启动时清除缓存；\n7、修复安卓5以下SSL认证问题；\n8、观看历史改为分页获取；\n9、修复一些已知BUG;",
     "target_size": "18.9M",
     "new_md5": "f9e6fdd4c20183c89dc15fa51bf72fdc",
