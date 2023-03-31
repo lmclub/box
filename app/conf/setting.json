@@ -8,7 +8,7 @@
     "show_marquee": true,
     "marquee_content": "温馨提示：请勿相信视频中的任何广告，谨防上当！",
     "update": "Yes",
-    "apk_file_url": "https://ghproxy.com/https://raw.githubusercontent.com/lmclub/box/main/apk/lmvod.apk",
+    "apk_file_url": "https://raw.gitmirror.com/lmclub/box/main/apk/lmvod.apk",
     "update_log": "可移动遥控器上下键点确定升级\n1、修复xwalk下载失败问题；\n2、修复搜索问题；\n3、优化播放器的一些问题；\n4、修复一些已知BUG;",
     "target_size": "18.9M",
     "new_md5": "5d6f57f7c82591f8a2bb22ca1bbcf942",
