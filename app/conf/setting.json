@@ -6,10 +6,10 @@
     "api_url": "http://api.lotics.com",
     "remark": "通知：龙门影视v2.0.0已发布，可同步收藏和历史，如卡顿的机型请安装v1.1.8。快到https://looo.top下载试试吧！",
     "show_marquee": true,
-    "marquee_content": "祝大家五一快了，工作顺利，事业有成；爱情甜蜜，家庭和睦；生活美满，财源滚滚；心境开阔，快乐幸福！！",
+    "marquee_content": "祝大家五一快乐，工作顺利，事业有成；爱情甜蜜，家庭和睦；生活美满，财源滚滚；心境开阔，快乐幸福！！",
     "update": "Yes",
     "apk_file_url": "https://raw.kgithub.com/lmclub/box/main/apk/lmbox.apk",
-    "update_log": "可移动遥控器上下键点确定升级\n1、添加用户登录；\n2、添加收藏&历史云同步；\n3、修复EPG失效问题；\n4、修复一些已知BUG;",
+    "update_log": "可移动遥控器上下键点确定升级\n卡顿机型请忽略升级;\n1、添加用户登录；\n2、添加收藏&历史云同步；\n3、修复EPG失效问题；\n4、修复一些已知BUG;",
     "target_size": "19.3M",
     "new_md5": "943869fe13224ca02120c7d548b1b0cb",
     "constraint": false
