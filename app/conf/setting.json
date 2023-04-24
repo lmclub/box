@@ -1,16 +1,16 @@
 {
-    "new_version": "1.1.8",
+    "new_version": "2.0.0",
     "disable_old_version": false,
     "show_notice": false,
     "image_url": "https://s1.ax1x.com/2023/03/05/ppEUra6.png",
     "api_url": "http://api.lotics.com",
-    "remark": "通知：龙门视频手机版v2.3.0已发布，支持多仓。快到https://looo.top下载试试吧！",
+    "remark": "通知：龙门影视v2.0.0已发布，可同步收藏和历史，如卡顿的机型请安装v1.1.8。快到https://looo.top下载试试吧！",
     "show_marquee": true,
-    "marquee_content": "温馨提示：请勿相信视频中的任何广告，谨防上当！",
+    "marquee_content": "祝大家五一快了，工作顺利，事业有成；爱情甜蜜，家庭和睦；生活美满，财源滚滚；心境开阔，快乐幸福！！",
     "update": "Yes",
     "apk_file_url": "https://raw.kgithub.com/lmclub/box/main/apk/lmbox.apk",
-    "update_log": "可移动遥控器上下键点确定升级\n1、修复xwalk下载失败问题；\n2、修复搜索问题；\n3、优化播放器的一些问题；\n4、修复一些已知BUG;",
-    "target_size": "18.9M",
-    "new_md5": "5d6f57f7c82591f8a2bb22ca1bbcf942",
+    "update_log": "可移动遥控器上下键点确定升级\n1、添加用户登录；\n2、添加收藏&历史云同步；\n3、修复EPG失效问题；\n4、修复一些已知BUG;",
+    "target_size": "19.3M",
+    "new_md5": "943869fe13224ca02120c7d548b1b0cb",
     "constraint": false
 }
