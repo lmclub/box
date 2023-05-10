@@ -1,16 +1,16 @@
 {
-    "new_version": "2.0.1",
+    "new_version": "2.1.0",
     "disable_old_version": false,
     "show_notice": false,
     "image_url": "https://s1.ax1x.com/2023/03/05/ppEUra6.png",
     "api_url": "http://api.lotics.com",
-    "remark": "通知：龙门影视v2.0.1已发布，修复收藏和历史问题，如卡顿的机型请安装v1.1.8或QBox。快到https://looo.top下载试试吧！",
+    "remark": "通知：龙门影视v2.1.0已发布，优化收藏和历史同步，如卡顿的机型请安装v1.1.8或QBox。快到https://looo.top下载试试吧！",
     "show_marquee": true,
     "marquee_content": "温馨提示：请勿相信视频中的任何广告，谨防上当！",
     "update": "Yes",
     "apk_file_url": "https://raw.kgithub.com/lmclub/box/main/apk/lmbox.apk",
-    "update_log": "可移动遥控器上下键点确定升级\n卡顿机型请忽略升级;\n1、优化同步逻辑；\n2、修复游客无历史记录问题；\n3、修复游客无收藏问题；\n4、修复一些已知BUG;",
+    "update_log": "可移动遥控器上下键点确定升级\n1、优化收藏同步逻辑；\n2、优化历史同步逻辑；\n3、增加登录用户获取多仓接口；\n4、修复一些已知BUG;",
     "target_size": "19.3M",
-    "new_md5": "fe6205ded50d03cdce9d604e9ba19e09",
+    "new_md5": "a609c4088fe86952f36240b4121fda5e",
     "constraint": false
 }
