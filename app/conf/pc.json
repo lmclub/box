@@ -324,40 +324,46 @@
     "default": 1,
     "data": [
       {
+        "name": "龙门",
+        "url": "https://jx.aidouer.net/?url=",
+        "isActive": true,
+        "id": 1
+      },
+      {
         "name": "777",
         "url": "https://jx.777jiexi.com/player/?url=",
         "isActive": true,
-        "id": 1
+        "id": 2
       },
       {
         "name": "虾米",
         "url": "https://jx.xmflv.com/?url=",
         "isActive": true,
-        "id": 2
+        "id": 3
       },
       {
         "name": "json",
         "url": "https://jx.bozrc.com:4433/player/?url=",
         "isActive": true,
-        "id": 3
+        "id": 4
       },
       {
         "name": "诺讯",
         "url": "https://www.nxflv.com/?url=",
         "isActive": true,
-        "id": 4
+        "id": 5
       },
       {
         "name": "夜幕",
         "url": "https://www.yemu.xyz/?url=",
         "isActive": true,
-        "id": 5
+        "id": 6
       },
       {
         "name": "战狼",
         "url": "https://jx.zhanlangbu.com/?url=",
         "isActive": true,
-        "id": 6
+        "id": 7
       }
     ]
   }
