@@ -1,25 +1,25 @@
 央视频道,#genre#
-CCTV1,http://39.135.138.60:18890/PLTV/88888910/224/3221225618/index.m3u8#http://39.135.138.59:18890/TVOD/88888910/224/3221225630/index.m3u8?$移动高清720P#http://111.20.106.13:6610/yinhe/2/ch00000090990000001068/index.m3u8?virtualDomain=yinhe.live_hls.zte.com$移动超清1080P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-1/1.m3u8?$移动超清1080P#http://39.135.138.58:18890/PLTV/88888888/224/3221225642/index.m3u8?$移动超清1080P#http://iptv.tvfix.org/hls/cctv1hd.m3u8?$全网超清1080P#http://117.148.179.155:80/PLTV/88888888/224/3221231468/1.m3u8?$咪咕移动1080P
-CCTV2,http://39.135.138.60:18890/PLTV/88888910/224/3221225619/index.m3u8#http://111.20.106.13:6610/yinhe/2/ch00000090990000001293/index.m3u8?virtualDomain=yinhe.live_hls.zte.com$移动超清1080P#http://iptv.tvfix.org/hls/cctv2hd.m3u8?$全网超清1080P#http://111.20.41.249:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226195/1.m3u8?$移动超清1080P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-2/1.m3u8?$移动超清1080P#http://117.148.179.147:80/PLTV/88888888/224/3221231678/1.m3u8?$咪咕移动1080P#http://39.135.138.58:18890/PLTV/88888888/224/3221225643/index.m3u8?$移动蓝光1080P
-CCTV3,http://39.135.138.60:18890/PLTV/88888910/224/3221225647/index.m3u8#http://117.148.179.183/PLTV/88888888/224/3221231682/index.m3u8#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-3/1.m3u8?$移动超清1080P#http://111.40.196.29/PLTV/88888888/224/3221225588/index.m3u8?$移动高清720P#http://iptv.tvfix.org/hls/cctv3hd.m3u8?$移动超清1080P#http://39.134.65.175/PLTV/88888888/224/3221225799/index.m3u8?$移动蓝光1080P#http://111.20.106.13:6610/yinhe/2/ch00000090990000001598/index.m3u8?virtualDomain=yinhe.live_hls.zte.com$移动超清1080P#http://111.20.41.249:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226397/1.m3u8?$移动超清1080P#http://117.148.179.183:80/PLTV/88888888/224/3221231682/index.m3u8?$咪咕移动1080P
-CCTV4,http://39.135.138.60:18890/PLTV/88888910/224/3221225621/index.m3u8#http://39.135.138.58:18890/PLTV/88888888/224/3221225621/index.m3u8?$移动蓝光1080P#http://183.207.248.15/PLTV/3/224/3221225534/index.m3u8?$移动超清1080P#http://111.20.106.13:6610/yinhe/2/ch00000090990000001290/index.m3u8?virtualDomain=yinhe.live_hls.zte.com$移动超清1080P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-4/1.m3u8?$移动超清1080P#http://39.135.47.101:6610/000000001000/HD-8000k-1080P-cctv4/1.m3u8?$移动超清1080P#http://111.20.41.248:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226223/1.m3u8?$移动超清1080P#http://117.148.179.183/PLTV/88888888/224/3221231726/index.m3u8?$咪咕移动1080P#http://iptv.tvfix.org/hls/cctv4hd.m3u8?$全网超清1080P
-CCTV5,http://39.135.138.59:18890/PLTV/88888910/224/3221225648/index.m3u8#http://39.135.32.5:6610/PLTV/77777777/224/3221225516/index.m3u8?$移动超清1080P#http://iptv.tvfix.org/hls/cctv5hd.m3u8?$全网超清1080P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-5/1.m3u8?$移动超清1080P#http://111.20.41.242:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226395/1.m3u8?$移动超清1080P#http://39.135.55.7:6610/PLTV/88888888/224/3221227170/index.m3u8?servicetype=1$移动超清1080P#http://111.63.117.13:6060/030000001000/CCTV-5/CCTV-5.m3u8?$移动超清1080P
-CCTV5+,http://117.148.179.136/PLTV/88888888/224/3221231459/index.m3u8#http://117.148.179.139/PLTV/88888888/224/3221231535/index.m3u8
-CCTV6,http://39.135.138.59:18890/PLTV/88888910/224/3221225650/index.m3u8#http://117.148.179.153/PLTV/88888888/224/3221231724/index.m3u8#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-6/1.m3u8?$移动超清1080P#http://39.135.47.101:6610/000000001000/HD-4000k-1080P-cctv6/1.m3u8?$移动超清1080P#http://39.135.138.58:18890/PLTV/88888888/224/3221225632/index.m3u8?$移动蓝光1080P#http://iptv.tvfix.org/hls/cctv6hd.m3u8?$全网超清1080P#http://111.20.106.13:6610/yinhe/2/ch00000090990000001275/index.m3u8?virtualDomain=yinhe.live_hls.zte.com$移动超清1080P#http://111.20.41.252:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226393/1.m3u8?$移动超清1080P#http://111.20.33.93:80/PLTV/88888893/224/3221226011/index.m3u8?$移动高清1080P#http://117.148.179.153:80/PLTV/88888888/224/3221231724/index.m3u8?$咪咕移动1080P
-CCTV7,http://39.135.138.60:18890/PLTV/88888910/224/3221225624/index.m3u8#http://117.148.179.160/PLTV/88888888/224/3221231633/index.m3u8#http://iptv.tvfix.org/hls/cctv7hd.m3u8?$全网超清1080P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-7/1.m3u8?$移动超清1080P#http://39.135.47.101:6610/000000001000/cctv-7/1.m3u8?$移动超清1080P#http://111.20.41.242:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226192/1.m3u8?$移动超清1080P#http://111.20.106.13:6610/yinhe/2/ch00000090990000001291/index.m3u8?virtualDomain=yinhe.live_hls.zte.com$移动超清1080P
-CCTV8,http://39.135.138.60:18890/PLTV/88888910/224/3221225635/index.m3u8#http://111.40.196.31/PLTV/88888888/224/3221225592/index.m3u8?$移动高清720P#http://39.135.55.7:6610/PLTV/88888888/224/3221227174/index.m3u8?servicetype=1$移动超清1080P#http://iptv.tvfix.org/hls/cctv8hd.m3u8?$全网超清1080P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-8/1.m3u8?$移动超清1080P#http://117.148.179.160:80/PLTV/88888888/224/3221231694/index.m3u8?$咪咕移动1080P#http://39.135.138.59:18890/TVOD/88888910/224/3221225635/index.m3u8?$移动超清1080P
-CCTV9,http://111.40.196.34/PLTV/88888888/224/3221225502/index.m3u8?$移动高清720P#http://111.20.106.13:6610/yinhe/2/ch00000090990000001294/index.m3u8?virtualDomain=yinhe.live_hls.zte.com$移动超清1080P#http://111.20.41.250:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226197/1.m3u8?$移动超清1080P#http://117.148.179.163/PLTV/88888888/224/3221231697/index.m3u8?$咪咕移动1080P#http://iptv.tvfix.org/hls/cctv9hd.m3u8?$全网超清1080P
-CCTV10,http://117.148.179.174/PLTV/88888888/224/3221231666/index.m3u8?$咪咕移动1080P#http://39.134.66.66/PLTV/88888888/224/3221225677/index.m3u8?$移动蓝光1080P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-10/1.m3u8?$移动超清1080P
-CCTV11,http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-11/1.m3u8?$移动超清1080P#http://39.134.65.162/PLTV/88888888/224/3221225517/index.m3u8?$移动蓝光1080P#http://117.148.179.165/PLTV/88888888/224/3221231711/index.m3u8?$咪咕移动1080P#http://39.135.138.59:18890/TVOD/88888910/224/3221225628/index.m3u8?$移动超清1080P#http://iptv.tvfix.org/hls/cctv11hd.m3u8?$全网超清1080P
-CCTV12,http://39.134.65.162/PLTV/88888888/224/3221225669/index.m3u8?$移动蓝光1080P#http://111.20.106.13:6610/yinhe/2/ch00000090990000001289/index.m3u8?virtualDomain=yinhe.live_hls.zte.com$移动超清1080P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-12/1.m3u8?$移动超清1080P#http://117.148.179.150:80/PLTV/88888888/224/3221231660/1.m3u8?$咪咕移动1080P
-CCTV13,http://39.135.32.5:6610/PLTV/77777777/224/3221225798/index.m3u8?$移动超清1080P#http://39.135.138.59:18890/PLTV/88888910/224/3221225638/index.m3u8?$移动蓝光1080P#http://iptv.tvfix.org/hls/cctv13hd.m3u8?$全网超清1080P#http://221.179.136.134:443/PLTV/88888888/224/3221226568/1.m3u8?$移动超清1080P#http://111.40.196.30/PLTV/88888888/224/3221225504/index.m3u8?$移动高清720P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-13/1.m3u8?$移动超清1080P
-CCTV14,http://111.20.41.242:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226193/1.m3u8?$移动超清1080P#http://iptv.tvfix.org/hls/cctv14hd.m3u8?$全网超清1080P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-14/1.m3u8?$移动超清1080P#http://111.20.106.13:6610/yinhe/2/ch00000090990000001292/index.m3u8?virtualDomain=yinhe.live_hls.zte.com$移动超清1080P#http://117.148.179.183/PLTV/88888888/224/3221231648/index.m3u8?$咪咕移动1080P
-CCTV15,http://111.40.196.31/PLTV/88888888/224/3221225500/index.m3u8?$移动高清720P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-15/1.m3u8?$移动超清1080P#http://117.148.179.169:80/PLTV/88888888/224/3221231693/index.m3u8?$咪咕移动1080P#http://39.134.65.162/PLTV/88888888/224/3221225513/index.m3u8?$移动蓝光1080P
-CCTV16,http://39.135.138.58:18890/PLTV/88888888/224/3221226233/index.m3u8?$移动蓝光1080P#http://iptv.tvfix.org/hls/cctv16hd.m3u8?$全网超清1080P#http://111.20.106.16:6610/yinhe/2/ch00000090990000002395/index.m3u8?virtualDomain=yinhe.live_hls.zte.com$移动蓝光1080P
-CCTV17,http://39.135.138.58:18890/PLTV/88888888/224/3221225907/index.m3u8?$移动超清1080P#http://iptv.tvfix.org/hls/cctv17hd.m3u8?$全网超清1080P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-17/1.m3u8?$移动超清1080P#http://117.148.179.167:80/PLTV/88888888/224/3221231772/1.m3u8?$咪咕移动1080P
-CCTV5+赛事台,http://111.40.196.25/PLTV/88888888/224/3221225767/index.m3u8?$移动高清720P
-CCTV4K超高清,http://liveop.cctv.cn/hls/4KHD/playlist.m3u8?$全网蓝光1080P#https://p.ggiptv.com/v/4k.m3u8?$全网蓝光4K#http://iptv.tvfix.org/hls/cctv4k.m3u8?$全网蓝光4K#http://ye23.win/iptv/4k.cctv.php?$全网蓝光4K#http://live.aikan.miguvideo.com/PLTV/88888888/224/3221233400/index.m3u8?$咪咕移动1080P
-CCTV8K超高清,http://117.148.179.157:80/PLTV/88888888/224/3221233404/index.m3u8?$咪咕移动1080P#http://live.aikan.miguvideo.com/PLTV/88888888/224/3221233350/index.m3u8?$移咪咕动1080P
+CCTV1,https://cntv.sbs/live?auth=2307100804&id=cctv1
+CCTV2,https://cntv.sbs/live?auth=2307100804&id=cctv2
+CCTV3,https://cntv.sbs/live?auth=2307100804&id=cctv3
+CCTV4,https://cntv.sbs/live?auth=2307100804&id=cctv4
+CCTV5,https://cntv.sbs/live?auth=2307100804&id=cctv5
+CCTV5+,https://cntv.sbs/live?auth=2307100804&id=cctv5p
+CCTV6,https://cntv.sbs/live?auth=2307100804&id=cctv6
+CCTV7,https://cntv.sbs/live?auth=2307100804&id=cctv7
+CCTV8,https://cntv.sbs/live?auth=2307100804&id=cctv8
+CCTV9,https://cntv.sbs/live?auth=2307100804&id=cctv9
+CCTV10,https://cntv.sbs/live?auth=2307100804&id=cctv10
+CCTV11,https://cntv.sbs/live?auth=2307100804&id=cctv11
+CCTV12,https://cntv.sbs/live?auth=2307100804&id=cctv12
+CCTV13,https://cntv.sbs/live?auth=2307100804&id=cctv13
+CCTV14,https://cntv.sbs/live?auth=2307100804&id=cctv14
+CCTV15,https://cntv.sbs/live?auth=2307100804&id=cctv15
+CCTV16,https://cntv.sbs/live?auth=2307100804&id=cctv16
+CCTV16 4K,https://cntv.sbs/live?auth=2307100804&id=cctv164k
+CCTV17,https://cntv.sbs/live?auth=2307100804&id=cctv17
+CCTV-4K,https://cntv.sbs/live?auth=2307100804&id=cctv4k
+CGTN,https://cntv.sbs/live?auth=2307100804&id=cgtn
 中国天气,http://140.207.241.2:8080/live/program/live/zgqx/1300000/mnf.m3u8
 清华大学电视台,http://live.cic.tsinghua.edu.cn/hls/tsinghuatv.m3u8
 CNC中文,http://39.135.138.59:18890/PLTV/88888910/224/3221225694/index.m3u8
@@ -48,98 +48,6 @@ CETV-1,http://111.63.117.13:6060/030000001000/G_CETV-1/G_CETV-1.m3u8
 CETV-2,http://111.63.117.13:6060/030000001000/G_CETV-2/G_CETV-2.m3u8
 CETV-4,http://111.63.117.13:6060/030000001000/G_CETV-4/G_CETV-4.m3u8
 
-百视通8M,#genre#
-CCTV1 8M,https://live.v1.mk/api/bestv.php?id=cctv1hd8m/8000000
-CCTV2 8M,https://live.v1.mk/api/bestv.php?id=cctv2hd8m/8000000
-CCTV3 8M,https://live.v1.mk/api/bestv.php?id=cctv38m/8000000
-CCTV4 8M,https://live.v1.mk/api/bestv.php?id=cctv4hd8m/8000000
-CCTV-4K,https://live.v1.mk/api/bestv.php?id=cctv4k/15000000
-CCTV5 8M,https://live.v1.mk/api/bestv.php?id=cctv58m/8000000
-CCTV5+ 8M,https://live.v1.mk/api/bestv.php?id=cctv5phd8m/8000000
-CCTV6 8M,https://live.v1.mk/api/bestv.php?id=cctv6hd8m/8000000
-CCTV7 8M,https://live.v1.mk/api/bestv.php?id=cctv7hd8m/8000000
-CCTV8 8M,https://live.v1.mk/api/bestv.php?id=cctv8hd8m/8000000
-CCTV9 8M,https://live.v1.mk/api/bestv.php?id=cctv9hd8m/8000000
-CCTV10 8M,https://live.v1.mk/api/bestv.php?id=cctv10hd8m/8000000
-CCTV11 8M,https://live.v1.mk/api/bestv.php?id=cctv11hd8m/8000000
-CCTV12 8M,https://live.v1.mk/api/bestv.php?id=cctv12hd8m/8000000
-CCTV13 8M,https://live.v1.mk/api/bestv.php?id=cctv13xwhd8m/8000000
-CCTV14 8M,https://live.v1.mk/api/bestv.php?id=cctvsehd8m/8000000
-CCTV15 8M,https://live.v1.mk/api/bestv.php?id=cctv15hd8m/8000000
-CCTV16 8M,https://live.v1.mk/api/bestv.php?id=cctv16hd8m/8000000
-CCTV16-4K,https://live.v1.mk/api/bestv.php?id=cctv16hd4k/15000000
-CCTV17 8M,https://live.v1.mk/api/bestv.php?id=cctv17hd8m/8000000
-欢笑剧场4k,https://live.v1.mk/api/bestv.php?id=hxjc4k/15000000
-江苏卫视 8M,https://live.v1.mk/api/bestv.php?id=jswshd8m/8000000
-广西卫视 8M,https://live.v1.mk/api/bestv.php?id=gxwshd8m/8000000
-四川卫视 8M,https://live.v1.mk/api/bestv.php?id=scwshd/8000000
-湖南卫视 8M,https://live.v1.mk/api/bestv.php?id=hunanwshd8m/8000000
-浙江卫视 8M,https://live.v1.mk/api/bestv.php?id=zjwshd8m/8000000
-东方卫视 8M,https://live.v1.mk/api/bestv.php?id=dfwshd8m/8000000
-北京卫视 8M,https://live.v1.mk/api/bestv.php?id=bjwshd8m/8000000
-天津卫视 8M,https://live.v1.mk/api/bestv.php?id=tjwshd8m/8000000
-辽宁卫视 8M,https://live.v1.mk/api/bestv.php?id=lnwshd8m/8000000
-安徽卫视 8M,https://live.v1.mk/api/bestv.php?id=ahwshd8m/8000000
-黑龙江卫视 8M,https://live.v1.mk/api/bestv.php?id=hljwshd8m/8000000
-广东卫视 8M,https://live.v1.mk/api/bestv.php?id=gdwshd8m/8000000
-深圳卫视 8M,https://live.v1.mk/api/bestv.php?id=szwshd8m/8000000
-湖北卫视 8M,https://live.v1.mk/api/bestv.php?id=hubeiws8m/8000000
-吉林卫视 8M,https://live.v1.mk/api/bestv.php?id=jlwshd8m/8000000
-山东卫视 8M,https://live.v1.mk/api/bestv.php?id=sdws8m/8000000
-江西卫视 8M,https://live.v1.mk/api/bestv.php?id=jxws8m/8000000
-河南卫视 8M,https://live.v1.mk/api/bestv.php?id=hnwshd8m/8000000
-河北卫视 8M,https://live.v1.mk/api/bestv.php?id=hbwshd8m/8000000
-甘肃卫视 8M,https://live.v1.mk/api/bestv.php?id=gswshd8m/8000000
-重庆卫视 8M,https://live.v1.mk/api/bestv.php?id=cqws8m/8000000
-东南卫视 8M,https://live.v1.mk/api/bestv.php?id=dnwshd8m/8000000
-云南卫视 8M,https://live.v1.mk/api/bestv.php?id=ynwshd8m/8000000
-贵州卫视 8M,https://live.v1.mk/api/bestv.php?id=gzwshd8m/8000000
-海南卫视 8M,https://live.v1.mk/api/bestv.php?id=hainanwshd8m/8000000
-欢笑剧场 8M,https://live.v1.mk/api/bestv.php?id=hxjc8m/8000000
-劲爆体育 8M,https://live.v1.mk/api/bestv.php?id=jbtyhd8m/8000000
-快乐垂钓 8M,https://live.v1.mk/api/bestv.php?id=klcd8m/8000000
-金鹰纪实 8M,https://live.v1.mk/api/bestv.php?id=jyjs8m/8000000
-戏曲精选 8M,https://live.v1.mk/api/bestv.php?id=xqjx8m/8000000
-上海第一财经 8M,https://live.v1.mk/api/bestv.php?id=dycjhd8m/8000000
-上视新闻 8M,https://live.v1.mk/api/bestv.php?id=xwzhhd8m/8000000
-上海都市 8M,https://live.v1.mk/api/bestv.php?id=dshd8m/8000000
-上海纪实 8M,https://live.v1.mk/api/bestv.php?id=jspdhd/4000000
-东方影视 8M,https://live.v1.mk/api/bestv.php?id=dfyshd8m/8000000
-五星体育 8M,https://live.v1.mk/api/bestv.php?id=wxtyhd8m/8000000
-上视外语 8M,https://live.v1.mk/api/bestv.php?id=icshd8m/8000000
-七彩戏剧 8M,https://live.v1.mk/api/bestv.php?id=qcxjhd8m/8000000
-上海教育 8M,https://live.v1.mk/api/bestv.php?id=setvhd/8000000
-全纪实 8M,https://live.v1.mk/api/bestv.php?id=qjshd8m/8000000
-生活时尚 8M,https://live.v1.mk/api/bestv.php?id=shss8m/8000000
-新视觉 8M,https://live.v1.mk/api/bestv.php?id=xsjhd8m/8000000
-游戏风云 8M,https://live.v1.mk/api/bestv.php?id=yxfy8m/8000000
-热门综艺 8M,https://live.v1.mk/api/bestv.php?id=rmzy8m/8000000
-超级体育 8M,https://live.v1.mk/api/bestv.php?id=qcsj8m/8000000
-健康养生 8M,https://live.v1.mk/api/bestv.php?id=jkys8m/8000000
-百变课堂 8M,https://live.v1.mk/api/bestv.php?id=bbkt8m/8000000
-看天下精选 8M,https://live.v1.mk/api/bestv.php?id=ktxjx8m/8000000
-华语影院 8M,https://live.v1.mk/api/bestv.php?id=hyyy8m/8000000
-电竞天堂 8M,https://live.v1.mk/api/bestv.php?id=djtt8m/8000000
-青春动漫 8M,https://live.v1.mk/api/bestv.php?id=qcdm8m/8000000
-宝宝动画 8M,https://live.v1.mk/api/bestv.php?id=bbdh8m/8000000
-星光影院 8M,https://live.v1.mk/api/bestv.php?id=xgyy8m/8000000
-谍战剧场 8M,https://live.v1.mk/api/bestv.php?id=dzjc8m/8000000
-全球大片 8M,https://live.v1.mk/api/bestv.php?id=qqdp8m/8000000
-热门剧场 8M,https://live.v1.mk/api/bestv.php?id=rmjc8m/8000000
-陶瓷高清 8M,https://live.v1.mk/api/bestv.php?id=taocihd/8000000
-中国教育-1 8M,https://live.v1.mk/api/bestv.php?id=zgjy1t8m/8000000
-中国教育-4 8M,https://live.v1.mk/api/bestv.php?id=zgjy4hd8m/8000000
-卡酷少儿 8M,https://live.v1.mk/api/bestv.php?id=kkse8m/8000000
-纪实科教 8M,https://live.v1.mk/api/bestv.php?id=dajs8m/8000000
-茶频道 8M,https://live.v1.mk/api/bestv.php?id=cpdhdavs8m/8000000
-足球高清 8M,https://live.v1.mk/api/bestv.php?id=zqpd8m/8000000
-炫动卡通 8M,https://live.v1.mk/api/bestv.php?id=hhxd8m/8000000
-东方财经 8M,https://live.v1.mk/api/bestv.php?id=dfcjhd8m/8000000
-都市剧场 8M,https://live.v1.mk/api/bestv.php?id=dsjc8m/8000000
-动漫秀场 8M,https://live.v1.mk/api/bestv.php?id=dmxc8m/8000000
-法治天地 8M,https://live.v1.mk/api/bestv.php?id=fztd8m/8000000
-金色学堂 8M,https://live.v1.mk/api/bestv.php?id=jingsepd8m/8000000
-魅力足球 8M,https://live.v1.mk/api/bestv.php?id=mlyyhd8m/8000000
 
 卫视频道,#genre#
 湖南卫视,http://117.148.179.172/PLTV/88888888/224/3221231729/index.m3u8#http://117.148.179.135/PLTV/88888888/224/3221230206/index.m3u8#http://117.148.179.148/PLTV/88888888/224/3221230824/index.m3u8
