@@ -8,7 +8,7 @@
     "show_marquee": true,
     "marquee_content": "温馨提示：请勿相信视频中的任何广告，谨防上当！",
     "update": "Yes",
-    "apk_file_url": "https://raw.fastgit.ixmu.net/lmclub/box/main/apk/lmbox.apk",
+    "apk_file_url": "http://conf.iqinu.com/apk/lmbox.apk",
     "update_log": "可移动遥控器上下键点确定升级\n1、紧急修复搜索和登录页闪退问题；\n2、修复一些已知BUG;",
     "target_size": "22.3M",
     "new_md5": "7db672852aaff85d65031745b1b75c53",
