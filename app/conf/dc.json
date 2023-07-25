@@ -1,14 +1,6 @@
 {
     "urls": [
         {
-            "url": "https://yydsys.top/duo",
-            "name": "大聪明"
-        },
-        {
-            "url": "http://饭太硬.ga/tv",
-            "name": "饭太硬"
-        },
-        {
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/2hacc/TVBox/main/tvbox.json",
             "name": "二哈"
         },
@@ -39,10 +31,6 @@
         {
             "url": "https://ghproxy.com/raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json",
             "name": "FongMi"
-        },
-        {
-            "url": "https://ghproxy.com/raw.githubusercontent.com/lm317379829/PyramidStore/pyramid/py.json",
-            "name": "霜辉月明py"
         },
         {
             "url": "https://ghproxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
@@ -77,8 +65,8 @@
             "name": "D大"
         },
         {
-            "url": "https://www.agit.ai/n/b/raw/branch/a/b/c.json",
-            "name": "ImABC"
+            "url": "https://ghproxy.net/https://raw.githubusercontent.com/zhixc/CatVodTVSpider/main/json/tvbox_config.json",
+            "name": "zhixc"
         }
     ]
 }
