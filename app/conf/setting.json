@@ -4,13 +4,13 @@
     "show_notice": false,
     "image_url": "https://s1.ax1x.com/2023/03/05/ppEUra6.png",
     "api_url": "http://api.lotics.com",
-    "remark": "通知：龙门影视v2.2.1已发布，紧急修复搜索和登录页闪退问题。快到https://looo.top下载试试吧！",
+    "remark": "通知：龙门影视v2.2.2和QBox1.2.2已发布。快到https://looo.top下载试试吧！",
     "show_marquee": true,
     "marquee_content": "温馨提示：请勿相信视频中的任何广告，谨防上当！",
     "update": "Yes",
     "apk_file_url": "http://conf.iqinu.com/apk/lmbox.apk",
-    "update_log": "可移动遥控器上下键点确定升级\n1、紧急修复搜索和登录页闪退问题；\n2、修复一些已知BUG;",
+    "update_log": "可移动遥控器上下键点确定升级\n1、修复直播问题；\n2、修复一些已知BUG;",
     "target_size": "22.3M",
-    "new_md5": "7db672852aaff85d65031745b1b75c53",
+    "new_md5": "82f747d63bf00761f191ce2a8f412dba",
     "constraint": false
 }
