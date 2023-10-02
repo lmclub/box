@@ -1,16 +1,16 @@
 {
-    "new_version": "2.2.3",
+    "new_version": "2.2.4",
     "disable_old_version": false,
     "show_notice": false,
-    "image_url": "https://s1.ax1x.com/2023/03/05/ppEUra6.png",
+    "image_url": "http://conf.iqinu.com/alipay.jpg",
     "api_url": "http://api.lotics.com",
-    "remark": "通知：手机版2.6.0已发布，添加网盘、内置浏览器云解析，优化加载速度，优化下载和播放器等功能，赶紧到https://looo.top下载试试吧！",
+    "remark": "打开支付宝扫一扫领红包。每天都可以扫哦。",
     "show_marquee": true,
-    "marquee_content": "温馨提示：请勿相信视频中的任何广告，谨防上当！",
+    "marquee_content": "龙门影视祝大家月圆人圆事事圆，一生平安快乐幸福相伴！",
     "update": "Yes",
     "apk_file_url": "https://raw.fgit.cf/lmclub/box/main/apk/lmbox.apk",
-    "update_log": "可移动遥控器上下键点确定升级\n1、优化加载速度；\n2、修复一些已知BUG;",
-    "target_size": "22.3M",
-    "new_md5": "5338c129f4306816be9ed5af811953d4",
+    "update_log": "可移动遥控器上下键点确定升级\n1、修复配置缓存问题；\n2、修复一些已知BUG;",
+    "target_size": "28.3M",
+    "new_md5": "215b6f35fefa2c013336404760d7f556",
     "constraint": false
 }
