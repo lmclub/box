@@ -17,10 +17,6 @@
             "name": "肥猫"
         },
         {
-            "url": "http://drpy.site/js1",
-            "name": "小雅js"
-        },
-        {
             "url": "https://tvbox.cainisi.cf",
             "name": "菜妮丝XBPQ"
         },
@@ -31,10 +27,6 @@
         {
             "url": "https://ghproxy.net/raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json",
             "name": "FongMi"
-        },
-        {
-            "url": "https://ghproxy.net/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
-            "name": "高山流云js"
         },
         {
             "url": "https://www.agit.ai/liucn/box/raw/branch/main/m.json",
@@ -53,10 +45,6 @@
             "name": "南风XC"
         },
         {
-            "url": "https://raw.kgithub.com/kebedd69/TVbox-interface/main/甜蜜.json",
-            "name": "甜蜜dlgt7"
-        },
-        {
             "url": "https://download.kstore.space/download/2863/01.txt",
             "name": "潇洒"
         },
@@ -67,6 +55,10 @@
         {
             "url": "https://ghproxy.net/https://raw.githubusercontent.com/zhixc/CatVodTVSpider/main/json/tvbox_config.json",
             "name": "zhixc"
-        }
+        },
+	{
+	    "url": "https://ghproxy.com/https://raw.githubusercontent.com/mengzehe/tvbox/main/%E8%87%AA%E7%94%A8%E6%BA%90",
+	    "name": "小三"
+	}
     ]
 }
