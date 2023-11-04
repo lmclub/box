@@ -1,5 +1,5 @@
 {
-    "new_version": "2.2.4",
+    "new_version": "2.3.0",
     "disable_old_version": false,
     "show_notice": false,
     "image_url": "http://conf.iqinu.com/looo.top.jpg",
@@ -9,8 +9,8 @@
     "marquee_content": "温馨提示：不要相信视频中任何广告，谨防上当！",
     "update": "Yes",
     "apk_file_url": "https://raw.fgit.cf/lmclub/box/main/apk/lmbox.apk",
-    "update_log": "可移动遥控器上下键点确定升级\n1、修复配置缓存问题；\n2、修复一些已知BUG;",
+    "update_log": "可移动遥控器上下键点确定升级\n1、荐片和磁力播放支持；\n2升级播放器内核；\n3增加64位机支持；\n4升级js类库；\n5、修复一些已知BUG;",
     "target_size": "28.3M",
-    "new_md5": "215b6f35fefa2c013336404760d7f556",
+    "new_md5": "5fac1033b7a6c41aa2121893ed62bb56",
     "constraint": false
 }
