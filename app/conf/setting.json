@@ -1,5 +1,5 @@
 {
-    "new_version": "2.3.0",
+    "new_version": "2.3.1",
     "disable_old_version": false,
     "show_notice": false,
     "image_url": "http://conf.iqinu.com/img/gzh.jpg",
@@ -8,9 +8,9 @@
     "show_marquee": true,
     "marquee_content": "温馨提示：不要相信视频中任何广告，谨防上当！",
     "update": "Yes",
-    "apk_file_url": "http://down.iqinu.com/apk/lmbox.apk",
-    "update_log": "可移动遥控器上下键点确定升级\n1、荐片和磁力播放支持；\n2、升级播放器内核；\n3、增加64位机支持(到网盘下载)；\n4、升级js类库；\n5、修复一些已知BUG;",
+    "apk_file_url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/lmclub/box/main/apk/lmbox.apk",
+    "update_log": "可移动遥控器上下键点确定升级\n1、去除64位机支持；\n2、更换图片库；\n3、修复一些已知BUG;",
     "target_size": "28.3M",
-    "new_md5": "5fac1033b7a6c41aa2121893ed62bb56",
+    "new_md5": "0c38ba81efb647504690e3b932b81f7a",
     "constraint": false
 }
