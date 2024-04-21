@@ -1,0 +1,16 @@
+{
+    "urls": [
+        {
+            "url": "https://lzizy1.com/api.php/provide/vod/?ac=detail&t=46&pg=1&f=",
+            "name": "量子"
+        },
+        {
+            "url": "https://api.wujinapi.me/api.php/provide/vod/from/wjm3u8/?ac=detail&t=41&pg=1&f=",
+            "name": "无尽"
+        },
+        {
+            "url": "https://49zyw.com/api.php/provide/vod/?ac=detail&t=46&pg=1&f=",
+            "name": "四九"
+        }
+    ]
+}
