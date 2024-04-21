@@ -1,5 +1,10 @@
 {
     "recommend": "https://www.haoshengduanju.cc",
+    "vipPoint": {
+        "dailyPoint": -59,
+        "weeklyPoint": -399,
+        "monthlyPoint": -1596
+    },
     "urls": [
         {
             "url": "https://lzizy1.com/api.php/provide/vod/?ac=detail&t=46&pg=1&f=",
