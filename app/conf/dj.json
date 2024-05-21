@@ -12,7 +12,33 @@
         },
         {
             "name": "无尽",
-            "url": "https://api.wujinapi.me/api.php/provide/vod/from/wjm3u8/?ac=detail&t=41&pg=1&f="
+            "url": "https://api.wujinapi.me/api.php/provide/vod/from/wjm3u8/?ac=detail&t=54&pg=1&f=",
+            "categories": [
+                {
+                  "tid": 54,
+                  "name": "女频恋爱"
+                },
+                {
+                  "tid": 55,
+                  "name": "反转爽剧"
+                },
+                {
+                  "tid": 56,
+                  "name": "脑洞悬疑"
+                },
+                {
+                  "tid": 57,
+                  "name": "年代穿越"
+                },
+                {
+                  "tid": 58,
+                  "name": "古装仙侠"
+                },
+                {
+                  "tid": 59,
+                  "name": "现代都市"
+                }
+              ]
         },
         {
             "name":"新浪",
@@ -21,6 +47,10 @@
         {
             "name":"速播",
             "url":"https://subocaiji.com/api.php/provide/vod/?ac=detail&t=27&pg=1&f="
+        },
+        {
+            "name":"优质",
+            "url":"https://api.1080zyku.com/inc/apijson.php?ac=detail&t=83&pg=1&f="
         },
         {
             "name": "量子",
