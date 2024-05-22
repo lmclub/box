@@ -72,12 +72,50 @@
       "url": "https://api.1080zyku.com/inc/apijson.php?ac=detail&t=83&pg=1&f="
     },
     {
-      "name": "量子",
-      "url": "https://lzizy1.com/api.php/provide/vod/?ac=detail&t=46&pg=1&f="
+      "name": "快车",
+      "url": "https://caiji.kczyapi.com/api.php/provide/vod/?ac=detail&t=64&pg=1&f=",
+      "categories": [
+        {
+          "tid": 64,
+          "name": "女频恋爱"
+        },
+        {
+          "tid": 65,
+          "name": "反转爽剧"
+        },
+        {
+          "tid": 68,
+          "name": "脑洞悬疑"
+        },
+        {
+          "tid": 67,
+          "name": "年代穿越"
+        },
+        {
+          "tid": 66,
+          "name": "古装仙侠"
+        },
+        {
+          "tid": 69,
+          "name": "现代都市"
+        }
+      ]
+    },
+    {
+      "name": "豪华",
+      "url": "https://hhzyapi.com/api.php/provide/vod/?ac=detail&t=38&pg=1&f="
+    },
+    {
+      "name": "快看",
+      "url": "https://kuaikan-api.com/api.php/provide/vod/?ac=detail&t=64&pg=1&f="
     },
     {
       "name": "四九",
       "url": "https://49zyw.com/api.php/provide/vod/?ac=detail&t=46&pg=1&f="
+    },
+    {
+      "name": "量子",
+      "url": "https://lzizy1.com/api.php/provide/vod/?ac=detail&t=46&pg=1&f="
     }
   ]
 }
