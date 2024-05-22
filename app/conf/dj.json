@@ -110,6 +110,70 @@
       "url": "https://kuaikan-api.com/api.php/provide/vod/?ac=detail&t=64&pg=1&f="
     },
     {
+      "name": "乐视",
+      "url": "https://leshiapi.com/api.php/provide/vod/?ac=detail&t=46&pg=1&f=",
+      "categories": [
+        {
+          "tid": 55,
+          "name": "女频恋爱"
+        },
+        {
+          "tid": 54,
+          "name": "反转爽剧"
+        },
+        {
+          "tid": 58,
+          "name": "脑洞悬疑"
+        },
+        {
+          "tid": 57,
+          "name": "年代穿越"
+        },
+        {
+          "tid": 56,
+          "name": "古装仙侠"
+        },
+        {
+          "tid": 59,
+          "name": "现代都市"
+        }
+      ]
+    },
+    {
+      "name": "欧克",
+      "url": "https://api.okzy.org/api.php/provide/vod/?ac=detail&t=54&pg=1&f="
+    },
+    {
+      "name": "鸭鸭",
+      "url": "https://cj.yayazy.net/api.php/provide/vod/?ac=detail&t=54&pg=1&f=",
+      "categories": [
+        {
+          "tid": 64,
+          "name": "女频恋爱"
+        },
+        {
+          "tid": 65,
+          "name": "反转爽剧"
+        },
+        {
+          "tid": 68,
+          "name": "脑洞悬疑"
+        },
+        {
+          "tid": 67,
+          "name": "年代穿越"
+        },
+        {
+          "tid": 66,
+          "name": "古装仙侠"
+        },
+        {
+          "tid": 69,
+          "name": "现代都市"
+        }
+      ]
+    },
+    {
       "name": "四九",
       "url": "https://49zyw.com/api.php/provide/vod/?ac=detail&t=46&pg=1&f="
     },
