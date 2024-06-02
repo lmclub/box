@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: FongMi/TV
-          ref: release
+          ref: kitkat
           path: tv
 
       - name: Setup Java
@@ -64,7 +64,7 @@ jobs:
       - name: Build with Gradle
         run: |
           cd tv
-          bash gradlew --gradle-version 7.4.2 ${{ matrix.framework}}
+          bash gradlew ${{ matrix.framework}}
 
       - name: Get Commit Messages
         id: get_git_latest_message
