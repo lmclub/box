@@ -1,0 +1,96 @@
+name: Release
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  build:
+    name: Build On:(${{ matrix.os }},framework:${{ matrix.framework}})
+    runs-on: ${{ matrix.os }}
+    env:
+      TZ: Asia/Shanghai
+    permissions:
+      contents: write
+      security-events: write
+      pull-requests: write
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["ubuntu-latest"]
+        framework: ["assembleLeanbackJavaArm64_v8aRelease",
+                    "assembleLeanbackJavaArmeabi_v7aRelease",
+                    "assembleLeanbackPythonArm64_v8aRelease",
+                    "assembleLeanbackPythonArmeabi_v7aRelease",
+                    "assembleMobileJavaArm64_v8aRelease",
+                    "assembleMobileJavaArmeabi_v7aRelease",
+                    "assembleMobilePythonArm64_v8aRelease",
+                    "assembleMobilePythonArmeabi_v7aRelease"]
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+        with:
+          repository: FongMi/TV
+          ref: release
+          path: tv
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 11
+
+
+      - name: Checkout Publish sources
+        uses: actions/checkout@v4
+        with:
+          repository: lmclub/box
+          ref: publish
+          path: code
+
+      - name: Edit gradle
+        run: |
+          cd code 
+          python build.py --version ${{ github.ref_name }}
+
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+
+      - name: Build with Gradle
+        run: |
+          cd tv
+          bash gradlew ${{ matrix.framework}}
+
+      - name: Get Commit Messages
+        id: get_git_latest_message
+        run: |
+          cd tv
+          message=$(git log -1 --format=%B HEAD)
+          echo "Latest Message is ${message}"
+          echo ::set-output name=git_latest::$message
+
+      - name: Get Current Time
+        id: get_current_time
+        run: |
+          current_time=$(date +%F%t%T)
+          echo "current_time is ${current_time}"
+          echo ::set-output name=current_time::$current_time        
+
+      - name: Generate Changelog
+        run: |
+          cd tv
+          echo "# ${{ github.ref_name }}" > ${{ github.workspace }}-CHANGELOG.txt
+          echo "${{steps.get_current_time.outputs.current_time}}"
+          echo "## ${{steps.get_current_time.outputs.current_time}} ${{ github.ref_name }}" >> ${{ github.workspace }}-CHANGELOG.txt
+          echo "### Open Version Update" >> ${{ github.workspace }}-CHANGELOG.txt
+          echo "* ${{steps.get_git_latest_message.outputs.git_latest}}" >> ${{ github.workspace }}-CHANGELOG.txt
+
+      - name: Deploy
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          body_path: ${{ github.workspace }}-CHANGELOG.txt
+          files: ./tv/app/build/outputs/apk/*/release/*.apk
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # 给最高的权限
