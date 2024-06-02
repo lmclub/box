@@ -19,14 +19,15 @@ jobs:
       fail-fast: false
       matrix:
         os: ["ubuntu-latest"]
-        framework: ["assembleLeanbackJavaArm64_v8aRelease",
-                    "assembleLeanbackJavaArmeabi_v7aRelease",
-                    "assembleLeanbackPythonArm64_v8aRelease",
-                    "assembleLeanbackPythonArmeabi_v7aRelease",
-                    "assembleMobileJavaArm64_v8aRelease",
-                    "assembleMobileJavaArmeabi_v7aRelease",
-                    "assembleMobilePythonArm64_v8aRelease",
-                    "assembleMobilePythonArmeabi_v7aRelease"]
+        framework: ["assembleLeanbackJavaArmeabi_v7aRelease"]
+        # framework: ["assembleLeanbackJavaArm64_v8aRelease",
+        #             "assembleLeanbackJavaArmeabi_v7aRelease",
+        #             "assembleLeanbackPythonArm64_v8aRelease",
+        #             "assembleLeanbackPythonArmeabi_v7aRelease",
+        #             "assembleMobileJavaArm64_v8aRelease",
+        #             "assembleMobileJavaArmeabi_v7aRelease",
+        #             "assembleMobilePythonArm64_v8aRelease",
+        #             "assembleMobilePythonArmeabi_v7aRelease"]
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
@@ -63,7 +64,7 @@ jobs:
       - name: Build with Gradle
         run: |
           cd tv
-          bash gradlew ${{ matrix.framework}}
+          bash gradlew --gradle-version 7.4.2 ${{ matrix.framework}}
 
       - name: Get Commit Messages
         id: get_git_latest_message
