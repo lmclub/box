@@ -1,8 +1,9 @@
 name: Release
 on:
   push:
-    tags:
-      - v*
+    branches: [ publish ]  # 触发分支
+    #tags:
+    # - v*
 
 jobs:
   build:
