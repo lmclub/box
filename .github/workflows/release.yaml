@@ -56,6 +56,7 @@ jobs:
           repository: loamen/media
           ref: 1.1.1
           path: media
+          token: ${{ secrets.PAT }}
 
       - name: Edit gradle
         run: |
