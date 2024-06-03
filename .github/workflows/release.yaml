@@ -63,19 +63,17 @@ jobs:
           cd code 
           python build.py --version ${{ github.ref_name }}
 
-      - name: Extra Modify
-        # if: ${{ env.commit }}
-        # working-directory: TVBoxOSC
-        run: |
-          cd tv
-          echo '修改文件'
-          sed -i 's/apply from: file("\/media\/core_settings.gradle")/apply from: file("\.\.\/media\/core_settings.gradle")/g' settings.gradle
-          sed -i 's/private String url;/private String url = "http://box.iqinu.com";/g' app/src/main/java/com/fongmi/android/tv/bean/Config.java
-          sed -i '/if \(errorCode == PlaybackException.ERROR_CODE_PARSING_MANIFEST_UNSUPPORTED \|\| errorCode == PlaybackException.ERROR_CODE_PARSING_MANIFEST_MALFORMED\) return MimeTypes.APPLICATION_OCTET;/d' app/src/main/java/com/fongmi/android/tv/player/ExoUtil.java
-          sed -i '/builder.setAllowChunklessPreparation(Players.isHard(Players.EXO));/d' app/src/main/java/com/fongmi/android/tv/player/ExoUtil.java
-          sed -i '' 's/^buildPython "C:\/Users\/FongMi\/AppData\/Local\/Programs\/Python\/Python38\/python.exe"/\/\/ &/' pyramid/build.gradle
-          sed -i 's/minSdk 21/minSdk 16/g' youtube/build.gradle
-          sed -i 's/RequestBody\.create\(request\.getBody\(\), MediaType\.get\("application\/json"\)\)/RequestBody\.create\(MediaType\.get\("application\/json"\), request\.getBody\(\)\)/' youtube/src/main/java/com/github/kiulian/downloader/downloader/DownloaderImpl.java
+      - name: Extra Modify  
+        run: |  
+          cd tv  
+          echo '修改文件'  
+          sed -i 's|apply from: file("\/media\/core_settings.gradle")|apply from: file("../media/core_settings.gradle")|g' settings.gradle  
+          sed -i 's|private String url;|private String url = "http://box.iqinu.com";|g' app/src/main/java/com/fongmi/android/tv/bean/Config.java  
+          sed -i '/if \(errorCode == PlaybackException.ERROR_CODE_PARSING_MANIFEST_UNSUPPORTED \|\| errorCode == PlaybackException.ERROR_CODE_PARSING_MANIFEST_MALFORMED\) return MimeTypes.APPLICATION_OCTET;/d' app/src/main/java/com/fongmi/android/tv/player/ExoUtil.java  
+          sed -i '/builder.setAllowChunklessPreparation(Players.isHard(Players.EXO));/d' app/src/main/java/com/fongmi/android/tv/player/ExoUtil.java  
+          sed -i 's|^buildPython ".*python.exe"|//&|' pyramid/build.gradle  
+          sed -i 's/minSdk 21/minSdk 16/g' youtube/build.gradle  
+          sed -i 's|RequestBody\.create\(request\.getBody\(\), MediaType\.get\("application\/json"\)\)|RequestBody\.create\(MediaType\.get\("application\/json"\), request\.getBody\(\)\)|' youtube/src/main/java/com/github/kiulian/downloader/downloader/DownloaderImpl.java
 
 
       - name: Setup Gradle
