@@ -62,7 +62,7 @@ jobs:
           cd code 
           python build.py --version ${{ github.ref_name }}
 
-       - name: Extra Modify
+      - name: Extra Modify
         # if: ${{ env.commit }}
         # working-directory: TVBoxOSC
         run: |
