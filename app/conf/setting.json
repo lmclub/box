@@ -3,7 +3,7 @@
     "disable_old_version": false,
     "show_notice": false,
     "image_url": "http://box.iqinu.com/img/dxys.jpg",
-    "api_url": "http://box.iqinu.com",
+    "api_url": "https://raw.kkgithub.com/lmclub/box/main/app/conf/tv.json",
     "remark": "在匆匆岁月里，多少美好瞬间已成过去，再回首，恍然如梦。虽不能相伴到最后，仍感激命运曾让我们相遇。离别也是人生的旅程，愿未来的你仍能与家人共享电视机前的美好时光。",
     "show_marquee": true,
     "marquee_content": "通知：【东曦视界】公众号已经被禁，大家尽快关注备用号【东曦影视】谨防失联。",
