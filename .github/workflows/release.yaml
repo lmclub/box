@@ -100,8 +100,8 @@ jobs:
           sed -i '$a\RELEASE_STORE_PASSWORD=loamen.com'       ./gradle.properties
           sed -i '$a\RELEASE_KEY_PASSWORD=loamen.com'         ./gradle.properties
 
-      # - name: Output build.gradle after signing
-      #   run: cat tv/app/build.gradle
+      - name: Output build.gradle after signing
+        run: cat tv/app/build.gradle
 
       # - name: Setup Gradle
       #   uses: gradle/actions/setup-gradle@v3
