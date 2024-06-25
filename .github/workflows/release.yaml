@@ -75,9 +75,8 @@ jobs:
           sed -i 's/OK影视/草帽影视/g' app/src/main/res/values-zh-rCN/strings.xml
           sed -i 's/OK影視/草帽影視/g' app/src/main/res/values-zh-rTW/strings.xml
           sed -i 's/OKTV/CMTV/g' app/src/main/res/values/strings.xml
-          sed -i 's/^buildPython "C:\/Users\/FongMi\/AppData\/Local\/Programs\/Python\/Python38\/python.exe"$/#\&/' pyramid/build.gradle
-
-          # sed -i 's|^buildPython ".*python.exe"|//&|' pyramid/build.gradle
+          # 替换pyramid
+          cp -f ${{ github.workspace }}/code/pyramid/build.gradle pyramid/build.gradle
 
       - name: Release Apk Sign
         # if: ${{ env.commit }}
@@ -93,8 +92,6 @@ jobs:
           sed -i '$a\RELEASE_KEY_ALIAS=loamen'            ./gradle.properties
           sed -i '$a\RELEASE_STORE_PASSWORD=loamen.com'       ./gradle.properties
           sed -i '$a\RELEASE_KEY_PASSWORD=loamen.com'         ./gradle.properties
-          # 替换pyramid
-          cp -f ${{ github.workspace }}/code/pyramid/build.gradle pyramid/build.gradle
 
       # - name: Setup Gradle
       #   uses: gradle/actions/setup-gradle@v3
@@ -113,7 +110,7 @@ jobs:
           echo "sdk.dir=$ANDROID_HOME" > local.properties #set sdk
           chmod +x gradlew
           # ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
-          bash gradlew ${{ matrix.framework}} --build-cache --parallel --daemon --warning-mode all
+          ./gradlew ${{ matrix.framework}} --debug --build-cache --parallel --daemon --warning-mode all
 
       - name: Get Commit Messages
         id: get_git_latest_message

@@ -10,15 +10,15 @@ android {
         minSdk 16
         targetSdk 28
         ndk { abiFilters "armeabi-v7a" }
-//        python {
+        python {
 //            buildPython "C:/Users/Don/AppData/Local/Programs/Python/Python38/python.exe"
-//            pip {
-//                install "lxml"
-//                install "requests"
-//                install 'pycryptodome'
-//                install 'beautifulsoup4'
-//            }
-//        }
+            pip {
+                install "lxml"
+                install "requests"
+                install 'pycryptodome'
+                install 'beautifulsoup4'
+            }
+        }
     }
 
     sourceSets {
