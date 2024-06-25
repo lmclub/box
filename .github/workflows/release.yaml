@@ -107,13 +107,15 @@ jobs:
           signingConfig="$(echo "$signingConfig" |base64 -d )"
           sed -i -e "/defaultConfig {/i\\$signingConfigs " -e "/debug {/a\\$signingConfig " -e "/release {/a\\$signingConfig " app/build.gradle
           cp -f ${{ github.workspace }}/code/box.jks app/box.jks
-          sed -i '$a\RELEASE_STORE_FILE=./box.jks'     ./gradle.properties
-          sed -i '$a\RELEASE_KEY_ALIAS=loamen'            ./gradle.properties
-          sed -i '$a\RELEASE_STORE_PASSWORD=loamen.com'       ./gradle.properties
-          sed -i '$a\RELEASE_KEY_PASSWORD=loamen.com'         ./gradle.properties
+          sed -i '$a\RELEASE_STORE_FILE=./box.jks'          gradle.properties
+          sed -i '$a\RELEASE_KEY_ALIAS=loamen'              gradle.properties
+          sed -i '$a\RELEASE_STORE_PASSWORD=loamen.com'     gradle.properties
+          sed -i '$a\RELEASE_KEY_PASSWORD=loamen.com'       gradle.properties
 
       - name: Output build.gradle after signing
-        run: cat tv/app/build.gradle
+        run: |
+          cat tv/gradle.properties
+          cat tv/app/build.gradle
 
       # - name: Setup Gradle
       #   uses: gradle/actions/setup-gradle@v3
@@ -195,13 +197,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       
-      - name: Upload build.gradle Artifact
-        if: failure() || always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: build-gradle
-          path: tv/app/build.gradle
-          retention-days: 7 # 可选：设置工件保留的天数
+      # - name: Upload build.gradle Artifact
+      #   if: failure() || always()
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: build-gradle
+      #     path: tv/app/build.gradle
+      #     retention-days: 7 # 可选：设置工件保留的天数
 
   clean:
     needs: build
