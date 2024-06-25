@@ -65,6 +65,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install lxml requests pycryptodome beautifulsoup4
 
+      - name: Output build.gradle before Modify
+        run: cat tv/app/build.gradle
+
       - name: Extra Modify  
         run: |  
           cd tv  
@@ -77,6 +80,7 @@ jobs:
           sed -i 's/OKTV/CMTV/g' app/src/main/res/values/strings.xml
           # 替换pyramid
           cp -f ${{ github.workspace }}/code/pyramid/build.gradle pyramid/build.gradle
+          sed -i 's|implementation "cat.ereza:customactivityoncrash:publish"|implementation "cat.ereza:customactivityoncrash:2.4.0"|g' app/build.gradle
 
       - name: Output build.gradle before signing
         run: cat tv/app/build.gradle
@@ -98,7 +102,7 @@ jobs:
 
       - name: Output build.gradle after signing
         run: cat tv/app/build.gradle
-        
+
       # - name: Setup Gradle
       #   uses: gradle/actions/setup-gradle@v3
       #   with:
