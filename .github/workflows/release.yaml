@@ -98,6 +98,7 @@ jobs:
           signingConfig='c2lnbmluZ0NvbmZpZyBzaWduaW5nQ29uZmlncy5teUNvbmZpZ1w='
           signingConfigs="$(echo "$signingConfigs" |base64 -d )"
           signingConfig="$(echo "$signingConfig" |base64 -d )"
+          grep -v 'signingConfig signingConfigs.debug' app/build.gradle > app/build.gradle.tmp && mv app/build.gradle.tmp app/build.gradle
           sed -i -e "/defaultConfig {/i\\$signingConfigs " -e "/release {/a\\$signingConfig " app/build.gradle
           cp -f ${{ github.workspace }}/code/box.jks app/box.jks
 
