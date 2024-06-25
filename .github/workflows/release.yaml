@@ -38,7 +38,7 @@ jobs:
       - name: Checkout TV sources
         uses: actions/checkout@v4
         with:
-          repository: loamen/TV
+          repository: FongMi/TV
           ref: kitkat
           path: tv
 
@@ -182,13 +182,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       
-      - name: Upload build.gradle Artifact
-        if: failure() || always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: build-gradle
-          path: tv/app/
-          retention-days: 7 # 可选：设置工件保留的天数
+      # - name: Upload build.gradle Artifact
+      #   if: failure() || always()
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: build-gradle
+      #     path: tv/app/build.gradle
+      #     retention-days: 7 # 可选：设置工件保留的天数
 
   clean:
     needs: build
