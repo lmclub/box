@@ -72,7 +72,7 @@ jobs:
         run: |  
           cd tv  
           echo '修改文件'
-          sed -i 's/^implementation project(:youtube)/\/\/ &/' app/build.gradle
+          grep -v "implementation project(':youtube')" app/build.gradle > app/build.gradle.tmp && mv app/build.gradle.tmp app/build.gradle
           sed -i 's/cat.ereza:customactivityoncrash:publish/cat.ereza:customactivityoncrash:2.4.0/g' app/build.gradle
 
           #fix media and remove youtube
