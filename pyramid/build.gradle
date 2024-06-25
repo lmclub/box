@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.library'
+    id 'com.chaquo.python'
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 16
+        targetSdk 28
+        ndk { abiFilters "armeabi-v7a" }
+//        python {
+//            buildPython "C:/Users/Don/AppData/Local/Programs/Python/Python38/python.exe"
+//            pip {
+//                install "lxml"
+//                install "requests"
+//                install 'pycryptodome'
+//                install 'beautifulsoup4'
+//            }
+//        }
+    }
+
+    sourceSets {
+        main {
+            python.srcDirs = ["src/main/python"]
+        }
+    }
+}
+
+dependencies {
+    implementation project(':catvod')
+}
