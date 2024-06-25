@@ -71,16 +71,36 @@ jobs:
       - name: Extra Modify  
         run: |  
           cd tv  
-          echo '修改文件'  
+          echo '修改文件'
+          sed -i 's/^implementation project\(:youtube\)/\/\/ &/' app/build.gradle
+          sed -i 's/cat.ereza:customactivityoncrash:publish/cat.ereza:customactivityoncrash:2.4.0/g' app/build.gradle
+
           sed -i 's|apply from: file("\/media\/core_settings.gradle")|apply from: file("../media/core_settings.gradle")|g' settings.gradle
+          sed -i '' 's/^include \':youtube\';/\/\/ include \':youtube\';/' settings.gradle
+          
           sed -i 's|private String url;|private String url = "http://box.iqinu.com";|g' app/src/main/java/com/fongmi/android/tv/bean/Config.java
           sed -i 's|http://666.ewwe.gq/fongmi/release/main|https://ghproxy.net/https://raw.githubusercontent.com/lmclub/box/publish|g' catvod/src/main/java/com/github/catvod/utils/Github.java
           sed -i 's/OK影视/草帽影视/g' app/src/main/res/values-zh-rCN/strings.xml
           sed -i 's/OK影視/草帽影視/g' app/src/main/res/values-zh-rTW/strings.xml
           sed -i 's/OKTV/CMTV/g' app/src/main/res/values/strings.xml
+
+          sed -i 's/^ *view\.setRender\(Setting\.getRender\(\)\);/\/\/ &/' app/src/main/java/com/fongmi/android/tv/player/Players.java
+          # 修改 return new DefaultLoadControl(Setting.getBuffer()); 为 return new DefaultLoadControl();  
+          sed -i 's/return new DefaultLoadControl(Setting\.getBuffer\(\));/return new DefaultLoadControl\(\);/g' app/src/main/java/com/fongmi/android/tv/player/exo/ExoUtil.java  
+          # 注释掉 if (errorCode == ...) return MimeTypes.APPLICATION_OCTET;  
+          sed -i 's/^\(if \(errorCode == PlaybackException\.ERROR_CODE_PARSING_MANIFEST_UNSUPPORTED \|\| errorCode == PlaybackException\.ERROR_CODE_PARSING_MANIFEST_MALFORMED\)\) return MimeTypes\.APPLICATION_OCTET;/\/\/ &/' app/src/main/java/com/fongmi/android/tv/player/exo/ExoUtil.java  
+          # 注释掉 builder.setAllowChunklessPreparation(decode == Players.HARD);  
+          sed -i 's/^builder\.setAllowChunklessPreparation\(decode == Players\.HARD\);/\/\/ &/' app/src/main/java/com/fongmi/android/tv/player/exo/ExoUtil.java  
+          # 注释掉 builder.setForceUseRtpTcp(Setting.getRtsp() == 1);  
+          sed -i 's/^builder\.setForceUseRtpTcp\(Setting\.getRtsp\(\) == 1\);/\/\/ &/' app/src/main/java/com/fongmi/android/tv/player/exo/ExoUtil.java  
+          # 注释掉 builder.setAds(Arrays.asList("9999"));  
+          sed -i 's/^builder\.setAds\(Arrays\.asList\("9999"\)\);/\/\/ &/' app/src/main/java/com/fongmi/android/tv/player/exo/ExoUtil.java
+
+          sed -i '/import com\.github\.catvod\.net\.OkCookieJar;/d' catvod/src/main/java/com/github/catvod/net/interceptor/RequestInterceptor.java
+          sed -i 's/^\(OkCookieJar\.sync\(url, request\.header\(HttpHeaders\.COOKIE\)\);\)/\/\/ &/' catvod/src/main/java/com/github/catvod/net/interceptor/RequestInterceptor.java
+
           # 替换pyramid
           cp -f ${{ github.workspace }}/code/pyramid/build.gradle pyramid/build.gradle
-          sed -i 's/cat.ereza:customactivityoncrash:publish/cat.ereza:customactivityoncrash:2.4.0/g' app/build.gradle
 
       # - name: Output build.gradle before signing
       #   run: cat tv/app/build.gradle
