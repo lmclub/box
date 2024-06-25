@@ -80,7 +80,7 @@ jobs:
           sed -i 's/OKTV/CMTV/g' app/src/main/res/values/strings.xml
           # 替换pyramid
           cp -f ${{ github.workspace }}/code/pyramid/build.gradle pyramid/build.gradle
-          sed -i 's|implementation "cat.ereza:customactivityoncrash:publish"|implementation "cat.ereza:customactivityoncrash:2.4.0"|g' app/build.gradle
+          sed -i 's/cat.ereza:customactivityoncrash:publish/cat.ereza:customactivityoncrash:2.4.0/g' app/build.gradle
 
       - name: Output build.gradle before signing
         run: cat tv/app/build.gradle
