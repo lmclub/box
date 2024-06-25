@@ -65,8 +65,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install lxml requests pycryptodome beautifulsoup4
 
-      - name: Output build.gradle before Modify
-        run: cat tv/app/build.gradle
+      # - name: Output build.gradle before Modify
+      #   run: cat tv/app/build.gradle
 
       - name: Extra Modify  
         run: |  
@@ -74,7 +74,7 @@ jobs:
           echo '修改文件'  
           sed -i 's|apply from: file("\/media\/core_settings.gradle")|apply from: file("../media/core_settings.gradle")|g' settings.gradle
           sed -i 's|private String url;|private String url = "http://box.iqinu.com";|g' app/src/main/java/com/fongmi/android/tv/bean/Config.java
-          sed -i 's|http://666.ewwe.gq/fongmi/release|https://ghproxy.net/https://raw.githubusercontent.com/lmclub/box|g' catvod/src/main/java/com/github/catvod/utils/Github.java
+          sed -i 's|http://666.ewwe.gq/fongmi/release/main|https://ghproxy.net/https://raw.githubusercontent.com/lmclub/box/publish|g' catvod/src/main/java/com/github/catvod/utils/Github.java
           sed -i 's/OK影视/草帽影视/g' app/src/main/res/values-zh-rCN/strings.xml
           sed -i 's/OK影視/草帽影視/g' app/src/main/res/values-zh-rTW/strings.xml
           sed -i 's/OKTV/CMTV/g' app/src/main/res/values/strings.xml
@@ -82,8 +82,8 @@ jobs:
           cp -f ${{ github.workspace }}/code/pyramid/build.gradle pyramid/build.gradle
           sed -i 's/cat.ereza:customactivityoncrash:publish/cat.ereza:customactivityoncrash:2.4.0/g' app/build.gradle
 
-      - name: Output build.gradle before signing
-        run: cat tv/app/build.gradle
+      # - name: Output build.gradle before signing
+      #   run: cat tv/app/build.gradle
 
       - name: Release Apk Sign
         # if: ${{ env.commit }}
@@ -100,8 +100,8 @@ jobs:
           sed -i '$a\RELEASE_STORE_PASSWORD=loamen.com'       ./gradle.properties
           sed -i '$a\RELEASE_KEY_PASSWORD=loamen.com'         ./gradle.properties
 
-      - name: Output build.gradle after signing
-        run: cat tv/app/build.gradle
+      # - name: Output build.gradle after signing
+      #   run: cat tv/app/build.gradle
 
       # - name: Setup Gradle
       #   uses: gradle/actions/setup-gradle@v3
@@ -151,7 +151,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           body_path: ${{ github.workspace }}-CHANGELOG.txt
-          files: ./tv/app/build/outputs/apk/*/release/*.apk
+          files: tv/app/leanback/release/*.apk
         env:
           GITHUB_TOKEN: ${{ github.token }} # 给最高的权限
       
