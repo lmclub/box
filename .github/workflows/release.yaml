@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         os: ["ubuntu-latest"]
-        framework: ["assembleLeanbackJavaArmeabi_v7aRelease"]
+        framework: ["assembleLeanbackRelease"]
         # framework: ["assembleLeanbackJavaArm64_v8aRelease",
         #             "assembleLeanbackJavaArmeabi_v7aRelease",
         #             "assembleLeanbackPythonArm64_v8aRelease",
@@ -79,11 +79,25 @@ jobs:
 
           # sed -i 's|^buildPython ".*python.exe"|//&|' pyramid/build.gradle
 
+      - name: Release Apk Sign
+        # if: ${{ env.commit }}
+        working-directory: tv
+        run: |
+          signingConfigs='ICAgIHNpZ25pbmdDb25maWdzIHtcCiAgICAgICAgaWYgKHByb2plY3QuaGFzUHJvcGVydHkoIlJFTEVBU0VfU1RPUkVfRklMRSIpKSB7XAogICAgICAgICAgICBteUNvbmZpZyB7XAogICAgICAgICAgICAgICAgc3RvcmVGaWxlIGZpbGUoUkVMRUFTRV9TVE9SRV9GSUxFKVwKICAgICAgICAgICAgICAgIHN0b3JlUGFzc3dvcmQgUkVMRUFTRV9TVE9SRV9QQVNTV09SRFwKICAgICAgICAgICAgICAgIGtleUFsaWFzIFJFTEVBU0VfS0VZX0FMSUFTXAogICAgICAgICAgICAgICAga2V5UGFzc3dvcmQgUkVMRUFTRV9LRVlfUEFTU1dPUkRcCiAgICAgICAgICAgICAgICB2MVNpZ25pbmdFbmFibGVkIHRydWVcCiAgICAgICAgICAgICAgICB2MlNpZ25pbmdFbmFibGVkIHRydWVcCiAgICAgICAgICAgICAgICBlbmFibGVWM1NpZ25pbmcgPSB0cnVlXAogICAgICAgICAgICAgICAgZW5hYmxlVjRTaWduaW5nID0gdHJ1ZVwKICAgICAgICAgICAgfVwKICAgICAgICB9XAogICAgfVwKXA=='
+          signingConfig='ICAgICAgICAgICAgaWYgKHByb2plY3QuaGFzUHJvcGVydHkoIlJFTEVBU0VfU1RPUkVfRklMRSIpKSB7XAogICAgICAgICAgICAgICAgc2lnbmluZ0NvbmZpZyBzaWduaW5nQ29uZmlncy5teUNvbmZpZ1wKICAgICAgICAgICAgfVwK'
+          signingConfigs="$(echo "$signingConfigs" |base64 -d )"
+          signingConfig="$(echo "$signingConfig" |base64 -d )"
+          sed -i -e "/defaultConfig {/i\\$signingConfigs " -e "/debug {/a\\$signingConfig " -e "/release {/a\\$signingConfig " app/build.gradle
+          cp -f ${{ github.workspace }}/box.jks app/box.jks
+          sed -i '$a\RELEASE_STORE_FILE=./box.jks'     ./gradle.properties
+          sed -i '$a\RELEASE_KEY_ALIAS=loamen'            ./gradle.properties
+          sed -i '$a\RELEASE_STORE_PASSWORD=loamen.com'       ./gradle.properties
+          sed -i '$a\RELEASE_KEY_PASSWORD=loamen.com'         ./gradle.properties
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
-        with:
-          gradle-version: '7.4.2' # 要使用的 Gradle 版本
+      # - name: Setup Gradle
+      #   uses: gradle/actions/setup-gradle@v3
+      #   with:
+      #     gradle-version: '7.4.2' # 要使用的 Gradle 版本
 
       - name: Build with Gradle
         run: |
