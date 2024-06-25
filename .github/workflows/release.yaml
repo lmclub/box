@@ -146,18 +146,35 @@ jobs:
           echo "### Open Version Update" >> ${{ github.workspace }}-CHANGELOG.txt
           echo "* ${{steps.get_git_latest_message.outputs.git_latest}}" >> ${{ github.workspace }}-CHANGELOG.txt
 
-      - name: Deploy
-        uses: softprops/action-gh-release@v1
-        # if: startsWith(github.ref, 'refs/tags/')
-        with:
-          body_path: ${{ github.workspace }}-CHANGELOG.txt
-          files: tv/app/leanback/release/*.apk
-        env:
-          GITHUB_TOKEN: ${{ github.token }} # 给最高的权限
+      # - name: Deploy
+      #   uses: softprops/action-gh-release@v1
+      #   if: startsWith(github.ref, 'refs/tags/')
+      #   with:
+      #     body_path: ${{ github.workspace }}-CHANGELOG.txt
+      #     files: tv/app/leanback/release/*.apk
+      #   env:
+      #     GITHUB_TOKEN: ${{ github.token }} # 给最高的权限
+
+      - name: Move APK to apk/kitkat
+        run: |
+          mkdir -p ${{ github.workspace }}/code/apk/kitkat
+          cp -f tv/app/leanback/release/*.apk ${{ github.workspace }}/code/apk/kitkat
+
+      - name: Commit and push APK  
+        working-directory: code  
+        run: |  
+          git config --global user.name "github-actions[bot]"  
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"  
+          git add apk/kitkat/leanback.apk  
+          git commit -m "* Automated APK build and push:${{steps.get_git_latest_message.outputs.git_latest}}"  
+          git push origin publish  
+        env:  
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
       
       - name: Upload build.gradle Artifact
         if: failure() || always()
         uses: actions/upload-artifact@v2
         with:
           name: build-gradle
-          path: tv/app/build.gradle
+          path: tv/app/leanback/release/
