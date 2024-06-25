@@ -75,8 +75,9 @@ jobs:
           sed -i 's/^implementation project(:youtube)/\/\/ &/' app/build.gradle
           sed -i 's/cat.ereza:customactivityoncrash:publish/cat.ereza:customactivityoncrash:2.4.0/g' app/build.gradle
 
+          sed -i '/^include \':youtube\';/d' settings.gradle
           sed -i 's|apply from: file("/media/core_settings.gradle")|apply from: file("../media/core_settings.gradle")|g' settings.gradle
-          # sed -i 's/^include \':youtube\';/\/\/ include \':youtube\';/' settings.gradle
+          
           sed -i 's|private String url;|private String url = "http://box.iqinu.com";|g' app/src/main/java/com/fongmi/android/tv/bean/Config.java
           sed -i 's|http://666\.ewwe\.gq/fongmi/release/main|https://ghproxy.net/https://raw.githubusercontent.com/lmclub/box/publish|g' catvod/src/main/java/com/github/catvod/utils/Github.java
           sed -i 's/OK影视/草帽影视/g' app/src/main/res/values-zh-rCN/strings.xml
