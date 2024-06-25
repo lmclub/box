@@ -100,9 +100,11 @@ jobs:
       #     gradle-version: '7.4.2' # 要使用的 Gradle 版本
 
       - name: Build with Gradle
+        working-directory: tv
         run: |
-          cd tv
-          bash gradlew ${{ matrix.framework}}
+          # bash gradlew ${{ matrix.framework}}
+          chmod +x gradlew
+          ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
 
       - name: Get Commit Messages
         id: get_git_latest_message
