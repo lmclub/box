@@ -95,7 +95,7 @@ jobs:
         working-directory: tv
         run: |
           signingConfigs='ICAgIHNpZ25pbmdDb25maWdzIHtcCiAgICAgICAgICAgIG15Q29uZmlnIHtcCiAgICAgICAgICAgICAgICBzdG9yZUZpbGUgZmlsZSgnLi9ib3guamtzJylcCiAgICAgICAgICAgICAgICBzdG9yZVBhc3N3b3JkICdsb2FtZW4uY29tJ1wKICAgICAgICAgICAgICAgIGtleUFsaWFzICdsb2FtZW4nXAogICAgICAgICAgICAgICAga2V5UGFzc3dvcmQgJ2xvYW1lbi5jb20nXAogICAgICAgICAgICAgICAgdjFTaWduaW5nRW5hYmxlZCB0cnVlXAogICAgICAgICAgICAgICAgdjJTaWduaW5nRW5hYmxlZCB0cnVlXAogICAgICAgICAgICAgICAgZW5hYmxlVjNTaWduaW5nID0gdHJ1ZVwKICAgICAgICAgICAgICAgIGVuYWJsZVY0U2lnbmluZyA9IHRydWVcCiAgICAgICAgICAgIH1cCiAgICB9XApc'
-          signingConfig='c2lnbmluZ0NvbmZpZyBzaWduaW5nQ29uZmlncy5teUNvbmZpZ1w='
+          signingConfig='ICAgICAgICAgICAgc2lnbmluZ0NvbmZpZyBzaWduaW5nQ29uZmlncy5teUNvbmZpZ1w='
           signingConfigs="$(echo "$signingConfigs" |base64 -d )"
           signingConfig="$(echo "$signingConfig" |base64 -d )"
           grep -v 'signingConfig signingConfigs.debug' app/build.gradle > app/build.gradle.tmp && mv app/build.gradle.tmp app/build.gradle
