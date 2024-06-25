@@ -127,7 +127,7 @@ jobs:
         id: find_apk_path 
         run: |  
           # 假设 APK 文件在 app/build/outputs/apk/release/ 目录下  
-          APK_PATH=$(find ./tv/app/ -name "*.apk")  
+          APK_PATH=$(find ./tv/app/ -name "leanback.apk")  
           echo "APK Path: $APK_PATH"
           # 将 APK 路径设置为步骤的输出  
           echo "::set-output name=apk_path::$APK_PATH"
@@ -168,7 +168,7 @@ jobs:
       - name: Move APK to apk/kitkat
         run: |
           mkdir -p ${{ github.workspace }}/code/apk/kitkat
-          cp -f ${{ steps.find_apk_path.outputs.apk_path }} ${{ github.workspace }}/code/apk/kitkat
+          cp -f tv/app/build/outputs/apk/leanback/release/leanback.apk ${{ github.workspace }}/code/apk/kitkat
 
       - name: Commit and push APK  
         working-directory: code  
@@ -189,3 +189,15 @@ jobs:
           name: build-gradle
           path: tv/app/
           retention-days: 7 # 可选：设置工件保留的天数
+
+  clean:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete older workflow runs and artifacts
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 14
+          keep_minimum_runs: 10
