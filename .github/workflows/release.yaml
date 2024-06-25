@@ -101,20 +101,15 @@ jobs:
         # if: ${{ env.commit }}
         working-directory: tv
         run: |
-          signingConfigs='ICAgIHNpZ25pbmdDb25maWdzIHtcCiAgICAgICAgaWYgKHByb2plY3QuaGFzUHJvcGVydHkoIlJFTEVBU0VfU1RPUkVfRklMRSIpKSB7XAogICAgICAgICAgICBteUNvbmZpZyB7XAogICAgICAgICAgICAgICAgc3RvcmVGaWxlIGZpbGUoUkVMRUFTRV9TVE9SRV9GSUxFKVwKICAgICAgICAgICAgICAgIHN0b3JlUGFzc3dvcmQgUkVMRUFTRV9TVE9SRV9QQVNTV09SRFwKICAgICAgICAgICAgICAgIGtleUFsaWFzIFJFTEVBU0VfS0VZX0FMSUFTXAogICAgICAgICAgICAgICAga2V5UGFzc3dvcmQgUkVMRUFTRV9LRVlfUEFTU1dPUkRcCiAgICAgICAgICAgICAgICB2MVNpZ25pbmdFbmFibGVkIHRydWVcCiAgICAgICAgICAgICAgICB2MlNpZ25pbmdFbmFibGVkIHRydWVcCiAgICAgICAgICAgICAgICBlbmFibGVWM1NpZ25pbmcgPSB0cnVlXAogICAgICAgICAgICAgICAgZW5hYmxlVjRTaWduaW5nID0gdHJ1ZVwKICAgICAgICAgICAgfVwKICAgICAgICB9XAogICAgfVwKXA=='
-          signingConfig='ICAgICAgICAgICAgaWYgKHByb2plY3QuaGFzUHJvcGVydHkoIlJFTEVBU0VfU1RPUkVfRklMRSIpKSB7XAogICAgICAgICAgICAgICAgc2lnbmluZ0NvbmZpZyBzaWduaW5nQ29uZmlncy5teUNvbmZpZ1wKICAgICAgICAgICAgfVwK'
+          signingConfigs='ICAgIHNpZ25pbmdDb25maWdzIHtcCiAgICAgICAgICAgIG15Q29uZmlnIHtcCiAgICAgICAgICAgICAgICBzdG9yZUZpbGUgZmlsZSgnLi9ib3guamtzJylcCiAgICAgICAgICAgICAgICBzdG9yZVBhc3N3b3JkICdsb2FtZW4uY29tJ1wKICAgICAgICAgICAgICAgIGtleUFsaWFzICdsb2FtZW4nXAogICAgICAgICAgICAgICAga2V5UGFzc3dvcmQgJ2xvYW1lbi5jb20nXAogICAgICAgICAgICAgICAgdjFTaWduaW5nRW5hYmxlZCB0cnVlXAogICAgICAgICAgICAgICAgdjJTaWduaW5nRW5hYmxlZCB0cnVlXAogICAgICAgICAgICAgICAgZW5hYmxlVjNTaWduaW5nID0gdHJ1ZVwKICAgICAgICAgICAgICAgIGVuYWJsZVY0U2lnbmluZyA9IHRydWVcCiAgICAgICAgICAgIH1cCiAgICB9XApc'
+          signingConfig='c2lnbmluZ0NvbmZpZyBzaWduaW5nQ29uZmlncy5teUNvbmZpZ1w='
           signingConfigs="$(echo "$signingConfigs" |base64 -d )"
           signingConfig="$(echo "$signingConfig" |base64 -d )"
-          sed -i -e "/defaultConfig {/i\\$signingConfigs " -e "/debug {/a\\$signingConfig " -e "/release {/a\\$signingConfig " app/build.gradle
+          sed -i -e "/defaultConfig {/i\\$signingConfigs " -e "/release {/a\\$signingConfig " app/build.gradle
           cp -f ${{ github.workspace }}/code/box.jks app/box.jks
-          sed -i '$a\RELEASE_STORE_FILE=./box.jks'          gradle.properties
-          sed -i '$a\RELEASE_KEY_ALIAS=loamen'              gradle.properties
-          sed -i '$a\RELEASE_STORE_PASSWORD=loamen.com'     gradle.properties
-          sed -i '$a\RELEASE_KEY_PASSWORD=loamen.com'       gradle.properties
 
       - name: Output build.gradle after signing
         run: |
-          cat tv/gradle.properties
           cat tv/app/build.gradle
 
       # - name: Setup Gradle
