@@ -85,13 +85,10 @@ jobs:
           sed -i 's/OKTV/CMTV/g' app/src/main/res/values/strings.xml
 
           sed -i '/^ *view\.setRender(Setting.getRender());/s/^ *view\.setRender(Setting.getRender());/\/\/ &/' app/src/main/java/com/fongmi/android/tv/player/Players.java
-          sed -i 's/return new DefaultLoadControl(Setting\.getBuffer());/return new DefaultLoadControl();/g' app/src/main/java/com/fongmi/android/tv/player/exo/ExoUtil.java
-          sed -i '/^\(if (errorCode == PlaybackException.ERROR_CODE_PARSING_MANIFEST_UNSUPPORTED \|\| errorCode == PlaybackException.ERROR_CODE_PARSING_MANIFEST_MALFORMED)\) return MimeTypes.APPLICATION_OCTET;/s/^\(if (errorCode == PlaybackException.ERROR_CODE_PARSING_MANIFEST_UNSUPPORTED \|\| errorCode == PlaybackException.ERROR_CODE_PARSING_MANIFEST_MALFORMED)\) return MimeTypes.APPLICATION_OCTET;/\/\/ &/' app/src/main/java/com/fongmi/android/tv/player/exo/ExoUtil.java
-          sed -i '/^builder\.setAllowChunklessPreparation(decode == Players\.HARD);/s/^builder\.setAllowChunklessPreparation(decode == Players\.HARD);/\/\/ &/' app/src/main/java/com/fongmi/android/tv/player/exo/ExoUtil.java
-          sed -i '/^builder\.setForceUseRtpTcp(Setting\.getRtsp() == 1);/s/^builder\.setForceUseRtpTcp(Setting\.getRtsp() == 1);/\/\/ &/' app/src/main/java/com/fongmi/android/tv/player/exo/ExoUtil.java
-          sed -i '/^builder\.setAds(Arrays\.asList("9999"));/s/^builder\.setAds(Arrays\.asList("9999"));/\/\/ &/' app/src/main/java/com/fongmi/android/tv/player/exo/ExoUtil.java
 
-          sed -i '/import com\.github\.catvod\.net\.OkCookieJar;/d' catvod/src/main/java/com/github/catvod/net/interceptor/RequestInterceptor.java
+          cp -f ${{ github.workspace }}/code/app/src/main/java/com/fongmi/android/tv/player/exo/ExoUtil.java app/src/main/java/com/fongmi/android/tv/player/exo/ExoUtil.java
+
+          grep -v "import com\.github\.catvod\.net\.OkCookieJar;" catvod/src/main/java/com/github/catvod/net/interceptor/RequestInterceptor.java > catvod/src/main/java/com/github/catvod/net/interceptor/RequestInterceptor.java.tmp && mv catvod/src/main/java/com/github/catvod/net/interceptor/RequestInterceptor.java.tmp catvod/src/main/java/com/github/catvod/net/interceptor/RequestInterceptor.java
           sed -i '/OkCookieJar\.sync(url, request\.header(HttpHeaders\.COOKIE));/s/OkCookieJar\.sync(url, request\.header(HttpHeaders\.COOKIE));/\/\/ &/' catvod/src/main/java/com/github/catvod/net/interceptor/RequestInterceptor.java
 
           # 替换pyramid
