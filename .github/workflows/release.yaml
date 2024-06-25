@@ -75,8 +75,8 @@ jobs:
           sed -i 's/^implementation project(:youtube)/\/\/ &/' app/build.gradle
           sed -i 's/cat.ereza:customactivityoncrash:publish/cat.ereza:customactivityoncrash:2.4.0/g' app/build.gradle
 
-          grep -v "include ':youtube';" settings.gradle > settings.gradle.tmp && mv settings.gradle.tmp settings.gradle
-          sed -i 's|apply from: file("/media/core_settings.gradle")|apply from: file("../media/core_settings.gradle")|g' settings.gradle
+          #fix media and remove youtube
+          cp -f ${{ github.workspace }}/code/settings.gradle settings.gradle
           
           sed -i 's|private String url;|private String url = "http://box.iqinu.com";|g' app/src/main/java/com/fongmi/android/tv/bean/Config.java
           sed -i 's|http://666\.ewwe\.gq/fongmi/release/main|https://ghproxy.net/https://raw.githubusercontent.com/lmclub/box/publish|g' catvod/src/main/java/com/github/catvod/utils/Github.java
@@ -198,13 +198,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       
-      # - name: Upload build.gradle Artifact
-      #   if: failure() || always()
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: build-gradle
-      #     path: tv/app/build.gradle
-      #     retention-days: 7 # 可选：设置工件保留的天数
+      - name: Upload build.gradle Artifact
+        if: failure() || always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-gradle
+          path: tv/app/build.gradle
+          retention-days: 7 # 可选：设置工件保留的天数
 
   clean:
     needs: build
