@@ -20,14 +20,7 @@ jobs:
       matrix:
         os: ["ubuntu-latest"]
         framework: ["assembleLeanbackRelease"]
-        # framework: ["assembleLeanbackJavaArm64_v8aRelease",
-        #             "assembleLeanbackJavaArmeabi_v7aRelease",
-        #             "assembleLeanbackPythonArm64_v8aRelease",
-        #             "assembleLeanbackPythonArmeabi_v7aRelease",
-        #             "assembleMobileJavaArm64_v8aRelease",
-        #             "assembleMobileJavaArmeabi_v7aRelease",
-        #             "assembleMobilePythonArm64_v8aRelease",
-        #             "assembleMobilePythonArmeabi_v7aRelease"]
+
     steps:
       - name: Setup Java 11
         uses: actions/setup-java@v3
@@ -94,8 +87,8 @@ jobs:
           # 替换pyramid
           cp -f ${{ github.workspace }}/code/pyramid/build.gradle pyramid/build.gradle
 
-      # - name: Output build.gradle before signing
-      #   run: cat tv/app/build.gradle
+      - name: Output build.gradle before signing
+        run: cat tv/app/build.gradle
 
       - name: Release Apk Sign
         # if: ${{ env.commit }}
