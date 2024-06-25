@@ -144,3 +144,10 @@ jobs:
           files: ./tv/app/build/outputs/apk/*/release/*.apk
         env:
           GITHUB_TOKEN: ${{ github.token }} # 给最高的权限
+      
+      - name: Upload build.gradle Artifact
+        if: failure() || always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-gradle
+          path: tv/app/build.gradle
