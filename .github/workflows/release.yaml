@@ -34,6 +34,13 @@ jobs:
           repository: FongMi/TV
           ref: kitkat
           path: tv
+      
+      - name: Checkout Common sources
+        uses: actions/checkout@v4
+        with:
+          repository: loamen/common
+          ref: main
+          path: common
 
       - name: Checkout Publish sources
         uses: actions/checkout@v4
@@ -53,23 +60,25 @@ jobs:
       - name: Edit gradle
         run: |
           cd code 
-          python build.py --version ${{ github.ref_name }}
+          # python build.py --version ${{ github.ref_name }}
           # install python libs for pyramid
           python -m pip install --upgrade pip
           pip install lxml requests pycryptodome beautifulsoup4
 
-      # - name: Output build.gradle before Modify
-      #   run: cat tv/app/build.gradle
+      - name: Output build.gradle before Modify
+        run: cat tv/app/build.gradle
 
       - name: Extra Modify  
         run: |  
           cd tv  
           echo '修改文件'
-          grep -v "implementation project(':youtube')" app/build.gradle > app/build.gradle.tmp && mv app/build.gradle.tmp app/build.gradle
-          sed -i 's/cat.ereza:customactivityoncrash:publish/cat.ereza:customactivityoncrash:2.4.0/g' app/build.gradle
+          sed -i -e 's/:youtube/:common/g' -e 's/cat.ereza:customactivityoncrash:publish/cat.ereza:customactivityoncrash:2.4.0/g' app/build.gradle
 
           #fix media and remove youtube
-          cp -f ${{ github.workspace }}/code/settings.gradle settings.gradle
+          sed -i -e 's|:youtube|:common|g' \
+          -e 's|file("/media/core_settings.gradle")|file("../media/core_settings.gradle")|g' \
+          -e '/file("\.\.\/media\/core_settings.gradle")/a apply from: file("../common/core_settings.gradle")' settings.gradle
+
           
           sed -i 's|private String url;|private String url = "http://box.iqinu.com";|g' app/src/main/java/com/fongmi/android/tv/bean/Config.java
           sed -i 's|http://666\.ewwe\.gq/fongmi/release/main|https://ghproxy.net/https://raw.githubusercontent.com/lmclub/box/publish|g' catvod/src/main/java/com/github/catvod/utils/Github.java
@@ -86,6 +95,15 @@ jobs:
 
           # 替换pyramid
           cp -f ${{ github.workspace }}/code/pyramid/build.gradle pyramid/build.gradle
+
+          sed -i '/mBinding.about.setOnClickListener(this::onAbout);/a\
+          com.loamen.common.util.SettingUtil.showAbout(mBinding.aboutText, 2000);' app/src/leanback/java/com/fongmi/android/tv/ui/activity/SettingActivity.java
+
+          sed -i -e '/initConfig();/i com.loamen.common.util.SettingUtil.get().init(this).getConfig(null, url -> {Config.find(TextUtils.isEmpty(url) ? com.loamen.common.api.Config.API_URL : url, 0);initConfig();});' \
+          -e 's|confirm = true;|com.loamen.common.util.SettingUtil.get().showNoticeDialog(this, url -> {confirm = true;this.finish();});|' \
+          -e '/Notify.show(R.string.app_exit);/d' \
+          -e '/App.post(() -> confirm = false, 5000);/d' app/src/leanback/java/com/fongmi/android/tv/ui/activity/HomeActivity.java
+
 
       - name: Output build.gradle before signing
         run: cat tv/app/build.gradle
@@ -104,6 +122,7 @@ jobs:
 
       - name: Output build.gradle after signing
         run: |
+          cat tv/settings.gradle
           cat tv/app/build.gradle
 
       # - name: Setup Gradle
@@ -186,13 +205,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       
-      # - name: Upload build.gradle Artifact
-      #   if: failure() || always()
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: build-gradle
-      #     path: tv/app/build.gradle
-      #     retention-days: 7 # 可选：设置工件保留的天数
+      - name: Upload build.gradle Artifact
+        if: failure() || always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-gradle
+          path: tv/app/src/leanback/java/com/fongmi/android/tv/ui/activity/HomeActivity.java
+          retention-days: 7 # 可选：设置工件保留的天数
 
   clean:
     needs: build
