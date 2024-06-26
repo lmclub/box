@@ -53,7 +53,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: loamen/media
-          ref: 1.1.1
+          ref: 1.2.0
           path: media
           # token: ${{ secrets.PAT }}
 
@@ -65,8 +65,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install lxml requests pycryptodome beautifulsoup4
 
-      - name: Output build.gradle before Modify
-        run: cat tv/app/build.gradle
+      # - name: Output build.gradle before Modify
+      #   run: cat tv/app/build.gradle
 
       - name: Extra Modify  
         run: |  
@@ -105,8 +105,8 @@ jobs:
           -e '/App.post(() -> confirm = false, 5000);/d' app/src/leanback/java/com/fongmi/android/tv/ui/activity/HomeActivity.java
 
 
-      - name: Output build.gradle before signing
-        run: cat tv/app/build.gradle
+      # - name: Output build.gradle before signing
+      #   run: cat tv/app/build.gradle
 
       - name: Release Apk Sign
         # if: ${{ env.commit }}
@@ -209,7 +209,7 @@ jobs:
         if: failure() || always()
         uses: actions/upload-artifact@v2
         with:
-          name: build-gradle
+          name: artifact
           path: tv/app/src/leanback/java/com/fongmi/android/tv/ui/activity/HomeActivity.java
           retention-days: 7 # 可选：设置工件保留的天数
 
