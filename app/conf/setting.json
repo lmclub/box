@@ -3,7 +3,7 @@
     "disable_old_version": false,
     "show_notice": false,
     "image_url": "http://box.iqinu.com/img/dxys.jpg",
-    "api_url": "https://ghproxy.net/https://raw.githubusercontent.com/lmclub/box/main/app/conf/tv.json",
+    "api_url": "http://box.iqinu.com",
     "remark": "近期接到反馈部分地区有访问接口失败的问题，是因为长期遭受攻击导致的。近期将会对服务器进行升级，如遇接口失效问题请关注【东曦视界】或【东曦影视】公众号获取最新接口。",
     "show_marquee": true,
     "marquee_content": "温馨提示：请勿相信视频中任何广告，谨防上当！",
