@@ -3,7 +3,7 @@ muban.海螺3.二级.desc = '.hl-col-xs-12:eq(2)&&Text;.hl-col-xs-12.hl-col-sm-4
 var rule = {
     title:'AnFuns动漫',
     模板:'海螺3',
-    host:'https://www.anfuns.cc',
+    host:'https://www.anfuns.org',
     cate_exclude: '最新|排行',
     // url:'/type/fyclass-fypage.html',
     url:'/show/fyclassfyfilter.html',
