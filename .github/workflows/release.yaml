@@ -49,13 +49,13 @@ jobs:
           ref: publish
           path: code
 
-      - name: Checkout media sources
-        uses: actions/checkout@v4
-        with:
-          repository: loamen/media
-          ref: 1.2.0
-          path: media
-          # token: ${{ secrets.PAT }}
+      # - name: Checkout media sources
+      #   uses: actions/checkout@v4
+      #   with:
+      #     repository: loamen/media
+      #     ref: 1.2.0
+      #     path: media
+      #     # token: ${{ secrets.PAT }}
 
       - name: Edit gradle
         run: |
