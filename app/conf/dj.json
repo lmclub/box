@@ -13,7 +13,7 @@
     "ios": {
       "updateStatus": 0,
       "versionCode": 100,
-      "versionName": "v1.0.0"
+      "versionName": "v1.0.0",
       "modifyContent": "1、修复用户注册问题；\n2、修复签到参数缺失问题；\n3、优化修改手机号逻辑；\n4、修正一些已知Bug。",
       "downloadUrl": "https://pan.iqinu.com/api/public/dl/CiS9SjAL/%E9%BE%99%E9%97%A8%E8%A7%86%E9%A2%91%E6%89%8B%E6%9C%BA%E7%89%88_v2.9.7.apk",
       "appSize": 63223
