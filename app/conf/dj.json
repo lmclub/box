@@ -26,6 +26,10 @@
   },
   "urls": [
     {
+      "name": "草帽",
+      "url": "https://mycjhw8.live/api.php/provide/vod/?ac=detail&t=120&pg=1&f="
+    },
+    {
       "name": "红牛",
       "url": "https://www.hongniuzy2.com/api.php/provide/vod/?ac=detail&t=30&pg=1&f="
     },
