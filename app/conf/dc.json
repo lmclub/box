@@ -1,60 +1,100 @@
 {
     "urls": [
         {
-            "url": "https://ghproxy.net/https://raw.githubusercontent.com/2hacc/TVBox/main/tvbox.json",
-            "name": "二哈"
+            "url": "http://box.iqinu.com",
+            "name": "龙门线路"
         },
         {
-            "url": "https://ghproxy.net/https://raw.githubusercontent.com/lmclub/box/main/app/conf/drpy.json",
-            "name": "道长"
+            "url": "http://www.饭太硬.com/tv/",
+            "name": "饭太硬线路"
         },
         {
-            "url": "http://我不是.肥猫.love:63/接口禁止贩卖",
-            "name": "肥猫"
+            "url": "http://ok321.top/ok",
+            "name": "OK线路"
         },
         {
-            "url": "https://tvbox.cainisi.cf",
-            "name": "菜妮丝XBPQ"
+            "url": "https://盒子迷.top/禁止贩卖",
+            "name": "盒子迷线路"
+        },
+        {
+            "url": "http://meowtv.top/tv",
+            "name": "喵影线路"
+        },
+        {
+            "url": "https://gh.con.sh/https://raw.githubusercontent.com/ouhaibo1980/tvbox/master/pg/jsm.json",
+            "name": "PG线路"
+        },
+        {
+            "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
+            "name": "不具名线路"
+        },
+        {
+            "url": "http://肥猫.com",
+            "name": "肥猫线路"
+        },
+        {
+            "url": "http://www.mpanso.com/小米/DEMO.json",
+            "name": "小米线路"
+        },
+        {
+            "url": "http://tvbox.xn--4kq62z5rby2qupq9ub.top",
+            "name": "放牛线路"
+        },
+        {
+            "url": "https://szyyds.cn/tv/x.json",
+            "name": "小马线路"
+        },
+        {
+            "url": "http://ttkx.live:55/天天开心",
+            "name": "天天开心"
+        },
+        {
+            "url": "http://我不是.摸鱼儿.com",
+            "name": "摸鱼线路"
+        },
+        {
+            "url": "https://raw.liucn.cc/box/m.json",
+            "name": "老刘备线路"
+        },
+        {
+            "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+            "name": "高天流云"
+        },
+        {
+            "url": "https://gh.con.sh/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
+            "name": "香雅情"
         },
         {
             "url": "http://home.jundie.top:81/top98.json",
-            "name": "俊于"
+            "name": "俊佬线路"
         },
         {
-            "url": "https://ghproxy.net/raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json",
-            "name": "FongMi"
+            "url": "https://gh.con.sh/https://raw.githubusercontent.com/guot55/yg/main/max.json",
+            "name": "月光线路"
         },
         {
-            "url": "https://www.agit.ai/liucn/box/raw/branch/main/m.json",
-            "name": "老刘备"
+            "url": "http://cdn.qiaoji8.com/tvbox.json",
+            "name": "巧技线路"
         },
         {
-            "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/liu673cn/box/main/m.json",
-            "name": "刘CN"
+            "url": "https://gh.con.sh/https://raw.githubusercontent.com/HeChengChaXiu/tvbox/main/hccx.json",
+            "name": "荷城茶秀"
         },
         {
-            "url": "https://www.agit.ai/cyl518/yl/raw/branch/master/ml.json",
-            "name": "胖丫"
+            "url": "http://itvbox.cc/云星日记",
+            "name": "云星日记"
         },
         {
-            "url": "https://www.agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json",
-            "name": "南风XC"
+            "url": "http://52pan.top:81/api/v3/file/get/174964/%E5%90%BE%E7%88%B1%E8%AF%84%E6%B5%8B.m3u?sign=rPssLoffquDXszCARt6UNF8MobSa1FA27XomzOluJBY%3D%3A0",
+            "name": "吾爱线路"
         },
         {
-            "url": "https://download.kstore.space/download/2883/m3u8/dsj/guochan/mp1/1.m3u8",
-            "name": "D大"
+            "url": "https://gh.con.sh/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json",
+            "name": "南风线路"
         },
         {
-            "url": "https://ghproxy.net/https://raw.githubusercontent.com/zhixc/CatVodTVSpider/main/json/config.json",
-            "name": "zhixc"
-        },
-	{
-	    "url": "https://ghproxy.net/https://raw.githubusercontent.com/mengzehe/TVBox/main/%E8%87%AA%E7%94%A8%E6%BA%90",
-	    "name": "小三"
-	},
-	{
-            "url": "https://www.agit.ai/relax/adcc/raw/branch/master/tvbox.json",
-            "name": "巧技"
+            "url": "https://xn--xna-mf3g9f.v.nxog.top/m/333.php?ou=公众号欧歌app&mz=1&jar=all&b=欧歌xna",
+            "name": "欧歌线路"
         }
     ]
 }
