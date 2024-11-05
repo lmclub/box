@@ -7,6 +7,7 @@
     "dc_url": "https://raw.kkgithub.com/lmclub/box/main/app/conf/dc.json",
     "remark": "如果发现配置访问失败的情况，请用浏览器尝试是否能打开。有可能是被当地运营商屏蔽了，请尝试将DNS改成阿里或者腾讯再试",
     "show_marquee": true,
+    "is_login_required": true,
     "marquee_content": "温馨提示：请勿相信视频中任何广告，谨防上当！",
     "update": "Yes",
     "apk_mobile_url": "https://raw.kkgithub.com/lmclub/box/main/apk/lmvod.apk",
