@@ -1,0 +1,52 @@
+[
+  {
+    "name": "新版下载",
+    "list": [
+      {
+        "url": "https://box.iqinu.com/images/download.jpg",
+        "icon": "https://box.iqinu.com/images/download.jpg"
+      }
+    ]
+  },
+  {
+    "name": "最新版",
+    "list": [
+      {
+        "name": "新版下载",
+        "url": "https://box.iqinu.com/images/download.jpg",
+        "icon": "https://box.iqinu.com/images/download.jpg",
+        "version": "3.7.0"
+      },
+      {
+        "name": "东曦视界",
+        "url": "https://box.iqinu.com/images/dxsj.jpg",
+        "icon": "https://box.iqinu.com/images/dxsj.jpg",
+        "version": "公众号"
+      },
+      {
+        "name": "东曦影视",
+        "url": "https://box.iqinu.com/images/dxys.jpg",
+        "icon": "https://box.iqinu.com/images/dxys.jpg",
+        "version": "公众号"
+      },
+      {
+        "name": "东曦视界",
+        "url": "https://box.iqinu.com/images/sph.jpg",
+        "icon": "https://box.iqinu.com/images/sph.jpg",
+        "version": "视频号"
+      },
+      {
+        "name": "东曦视界",
+        "url": "https://box.iqinu.com/images/wxsq.jpg",
+        "icon": "https://box.iqinu.com/images/wxsq.jpg",
+        "version": "微信社区"
+      },
+      {
+        "name": "捐赠",
+        "url": "https://box.iqinu.com/images/zs_alipay.jpg",
+        "icon": "https://box.iqinu.com/images/zs_alipay.jpg",
+        "version": "支付宝"
+      }
+    ]
+  }
+]
